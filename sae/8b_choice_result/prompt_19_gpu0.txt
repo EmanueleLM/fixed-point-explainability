@@ -1,0 +1,106 @@
+
+============================================================
+PROMPT: Which animal is known as the "King of the Jungle"? A=Tiger B=Elephant C=Lion D=Bear Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 28, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 28, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 28, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.6916
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.4826
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6067
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 14 match those from iteration 13
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.7584)
+  2. ' Lion' (prob: 0.0963)
+  3. ' A' (prob: 0.0620)
+  4. ' B' (prob: 0.0546)
+  5. ' The' (prob: 0.0287)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.7276)
+  2. ' A' (prob: 0.1240)
+  3. ' B' (prob: 0.0818)
+  4. ' Lion' (prob: 0.0374)
+  5. '3' (prob: 0.0292)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.6898)
+  2. ' A' (prob: 0.1509)
+  3. ' B' (prob: 0.0931)
+  4. ' D' (prob: 0.0366)
+  5. '1' (prob: 0.0297)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: '/''
+Top 5 tokens:
+  1. '/'' (prob: 0.3660)
+  2. '️' (prob: 0.2929)
+  3. 'rador' (prob: 0.1495)
+  4. '' (prob: 0.0996)
+  5. ' and' (prob: 0.0920)
+
+Convergence metrics:
+Iterations: 13
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.105769
+None vs Double hook: 0.222009
+None vs Constant hook: 11.694886
+Single vs Double hook: 0.022028
+Single vs Constant hook: 11.294702
+Double vs Constant hook: 11.195873

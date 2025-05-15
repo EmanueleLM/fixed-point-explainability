@@ -1,0 +1,116 @@
+
+============================================================
+PROMPT: In which continent is the Amazon Rainforest primarily located? A=Africa B=Asia C=South America D=Australia Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 28, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 28, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 174
+Reactivation ratio: 0.9062 (90.62%)
+Jaccard similarity: 0.8286 (82.86%)
+Output shape: torch.Size([1, 28, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.4826
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6481
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 19 match those from iteration 18
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.6477)
+  2. 'South' (prob: 0.1796)
+  3. ' South' (prob: 0.0920)
+  4. ' In' (prob: 0.0420)
+  5. ' ' (prob: 0.0387)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.6051)
+  2. 'South' (prob: 0.1798)
+  3. ' South' (prob: 0.0837)
+  4. ' A' (prob: 0.0706)
+  5. ' B' (prob: 0.0608)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5665)
+  2. 'South' (prob: 0.1971)
+  3. ' A' (prob: 0.0956)
+  4. ' B' (prob: 0.0712)
+  5. ' South' (prob: 0.0695)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8286
+Shared features: 174
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4026)
+  2. '/'' (prob: 0.2754)
+  3. ' and' (prob: 0.1228)
+  4. 'rador' (prob: 0.1177)
+  5. '' (prob: 0.0815)
+
+Convergence metrics:
+Iterations: 18
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.102093
+None vs Double hook: 0.170224
+None vs Constant hook: 10.521002
+Single vs Double hook: 0.018780
+Single vs Constant hook: 9.496635
+Double vs Constant hook: 9.353077

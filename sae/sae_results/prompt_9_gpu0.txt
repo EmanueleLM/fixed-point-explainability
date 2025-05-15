@@ -1,0 +1,122 @@
+
+============================================================
+PROMPT: The universe began with
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 5, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 5, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 5, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 5, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 5, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.7220
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6000
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.6623
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 22 match those from iteration 21
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+============================================================
+PROMPT: The universe began with
+============================================================
+
+NONE HOOK:
+Next token: ' a'
+Top 5 tokens:
+  1. ' a' (prob: 0.6717)
+  2. ' the' (prob: 0.2001)
+  3. ' an' (prob: 0.0823)
+  4. ' one' (prob: 0.0246)
+  5. ' nothing' (prob: 0.0213)
+
+SINGLE HOOK:
+Next token: ' a'
+Top 5 tokens:
+  1. ' a' (prob: 0.7067)
+  2. ' the' (prob: 0.1893)
+  3. ' an' (prob: 0.0564)
+  4. ' one' (prob: 0.0267)
+  5. ' nothing' (prob: 0.0210)
+
+DOUBLE HOOK:
+Next token: ' a'
+Top 5 tokens:
+  1. ' a' (prob: 0.7194)
+  2. ' the' (prob: 0.1720)
+  3. ' an' (prob: 0.0620)
+  4. ' nothing' (prob: 0.0240)
+  5. ' one' (prob: 0.0226)
+
+CONSTANT HOOK:
+Next token: '-the'
+Top 5 tokens:
+  1. '-the' (prob: 0.4210)
+  2. '/by' (prob: 0.2983)
+  3. ' the' (prob: 0.1387)
+  4. '/from' (prob: 0.0752)
+  5. '/about' (prob: 0.0668)
+
+⚠️ None hook and Constant hook predict different tokens!
+
+⚠️ Single hook and Constant hook predict different tokens!
+
+⚠️ Double hook and Constant hook predict different tokens!
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.024386
+None vs Double hook: 0.037528
+None vs Constant hook: 6.216434
+Single vs Double hook: 0.004488
+Single vs Constant hook: 6.298034
+Double vs Constant hook: 6.415237

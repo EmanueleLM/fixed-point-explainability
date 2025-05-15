@@ -1,0 +1,108 @@
+
+============================================================
+PROMPT: Which country is home to the kangaroo? A=India B=South Africa C=Australia D=Brazil Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 26, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 26, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 180
+Reactivation ratio: 0.9375 (93.75%)
+Jaccard similarity: 0.8824 (88.24%)
+Output shape: torch.Size([1, 26, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5360
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5868
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7696
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9692
+  Active features: 192
+Detected cycle! Indices at iteration 15 match those from iteration 14
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5838)
+  2. ' A' (prob: 0.1965)
+  3. ' Australia' (prob: 0.1139)
+  4. ' B' (prob: 0.0641)
+  5. 'Australia' (prob: 0.0417)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4740)
+  2. ' A' (prob: 0.3105)
+  3. ' B' (prob: 0.0868)
+  4. ' Australia' (prob: 0.0815)
+  5. ' D' (prob: 0.0472)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4357)
+  2. ' A' (prob: 0.3339)
+  3. ' B' (prob: 0.1047)
+  4. ' Australia' (prob: 0.0721)
+  5. ' D' (prob: 0.0536)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8824
+Shared features: 180
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3546)
+  2. '/'' (prob: 0.2978)
+  3. 'rador' (prob: 0.1676)
+  4. '' (prob: 0.0983)
+  5. ' and' (prob: 0.0816)
+
+Convergence metrics:
+Iterations: 14
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.090327
+None vs Double hook: 0.129574
+None vs Constant hook: 10.367562
+Single vs Double hook: 0.008027
+Single vs Constant hook: 9.646956
+Double vs Constant hook: 9.589146

@@ -1,0 +1,115 @@
+
+============================================================
+PROMPT: Which process converts sugars into alcohol using yeast? A=Photosynthesis B=Fermentation C=Distillation D=Respiration Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 28, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 28, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 181
+Reactivation ratio: 0.9427 (94.27%)
+Jaccard similarity: 0.8916 (89.16%)
+Output shape: torch.Size([1, 28, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7534
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5673
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.5802
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.5296)
+  2. ' Fer' (prob: 0.1656)
+  3. ' C' (prob: 0.1147)
+  4. ' A' (prob: 0.0980)
+  5. ' fermentation' (prob: 0.0921)
+
+SINGLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.5193)
+  2. ' A' (prob: 0.2180)
+  3. ' C' (prob: 0.1308)
+  4. ' Fer' (prob: 0.0719)
+  5. ' fermentation' (prob: 0.0600)
+
+DOUBLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.4774)
+  2. ' A' (prob: 0.2488)
+  3. ' C' (prob: 0.1387)
+  4. '?
+' (prob: 0.0761)
+  5. ' D' (prob: 0.0589)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8916
+Shared features: 181
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4400)
+  2. '/'' (prob: 0.2480)
+  3. 'rador' (prob: 0.1293)
+  4. '' (prob: 0.0958)
+  5. ' and' (prob: 0.0869)
+
+Convergence metrics:
+Iterations: 17
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.112611
+None vs Double hook: 0.201276
+None vs Constant hook: 9.872578
+Single vs Double hook: 0.017395
+Single vs Constant hook: 9.249841
+Double vs Constant hook: 9.155980

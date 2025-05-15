@@ -1,0 +1,110 @@
+
+============================================================
+PROMPT: What is the smallest country in the world by land area? A=Monaco B=Nauru C=Vatican City D=San Marino Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 35, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 35, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 35, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 180
+Reactivation ratio: 0.9375 (93.75%)
+Jaccard similarity: 0.8824 (88.24%)
+Output shape: torch.Size([1, 35, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 35, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6623
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5360
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6410
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 16 match those from iteration 15
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: 'V'
+Top 5 tokens:
+  1. 'V' (prob: 0.5876)
+  2. ' Vatican' (prob: 0.1881)
+  3. ' A' (prob: 0.0948)
+  4. ' C' (prob: 0.0752)
+  5. 'San' (prob: 0.0543)
+
+SINGLE HOOK:
+Next token: 'V'
+Top 5 tokens:
+  1. 'V' (prob: 0.6026)
+  2. ' A' (prob: 0.1534)
+  3. ' C' (prob: 0.0887)
+  4. 'Mon' (prob: 0.0837)
+  5. ' B' (prob: 0.0716)
+
+DOUBLE HOOK:
+Next token: 'V'
+Top 5 tokens:
+  1. 'V' (prob: 0.4922)
+  2. ' A' (prob: 0.2085)
+  3. ' C' (prob: 0.1115)
+  4. ' B' (prob: 0.1020)
+  5. 'Mon' (prob: 0.0859)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8824
+Shared features: 180
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4003)
+  2. '/'' (prob: 0.2773)
+  3. 'rador' (prob: 0.1405)
+  4. ' and' (prob: 0.0929)
+  5. '' (prob: 0.0889)
+
+Convergence metrics:
+Iterations: 15
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.100318
+None vs Double hook: 0.194067
+None vs Constant hook: 10.656605
+Single vs Double hook: 0.030010
+Single vs Constant hook: 10.415071
+Double vs Constant hook: 9.925630

@@ -1,0 +1,110 @@
+
+============================================================
+PROMPT: What is used to clean your teeth?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 9, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 9, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 177
+Reactivation ratio: 0.9219 (92.19%)
+Jaccard similarity: 0.8551 (85.51%)
+Output shape: torch.Size([1, 9, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6991
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6203
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7220
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9394
+  Active features: 192
+Detected cycle! Indices at iteration 16 match those from iteration 15
+Cycle length: 1
+First→Final Jaccard similarity: 0.0323
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 12
+
+NONE HOOK:
+Next token: ' Tooth'
+Top 5 tokens:
+  1. ' Tooth' (prob: 0.4921)
+  2. ' What' (prob: 0.1712)
+  3. ' The' (prob: 0.1209)
+  4. ' A' (prob: 0.1172)
+  5. ' Most' (prob: 0.0985)
+
+SINGLE HOOK:
+Next token: ' Tooth'
+Top 5 tokens:
+  1. ' Tooth' (prob: 0.3331)
+  2. ' What' (prob: 0.2437)
+  3. ' A' (prob: 0.1578)
+  4. ' If' (prob: 0.1368)
+  5. ' The' (prob: 0.1286)
+
+DOUBLE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.2692)
+  2. ' Tooth' (prob: 0.2656)
+  3. ' If' (prob: 0.1662)
+  4. ' A' (prob: 0.1520)
+  5. ' How' (prob: 0.1469)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8551
+Shared features: 177
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3495)
+  2. ' and' (prob: 0.2233)
+  3. '/'' (prob: 0.2041)
+  4. 'rador' (prob: 0.1258)
+  5. ' which' (prob: 0.0972)
+
+Convergence metrics:
+Iterations: 15
+Convergence type: cycle
+First→Final Jaccard: 0.0323
+Shared features: 12
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.091140
+None vs Double hook: 0.157749
+None vs Constant hook: 7.042892
+Single vs Double hook: 0.019815
+Single vs Constant hook: 6.648391
+Double vs Constant hook: 6.542528

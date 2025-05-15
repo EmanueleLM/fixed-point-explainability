@@ -1,0 +1,158 @@
+
+============================================================
+PROMPT: What do birds lay?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 6, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 6, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 6, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 6, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 6, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 37, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 38, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 39, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 40 match those from iteration 39
+Cycle length: 1
+First→Final Jaccard similarity: 0.0026
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 1
+
+NONE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.2841)
+  2. ' Eggs' (prob: 0.2816)
+  3. ' The' (prob: 0.1684)
+  4. ' How' (prob: 0.1480)
+  5. ' Birds' (prob: 0.1179)
+
+SINGLE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3064)
+  2. ' Eggs' (prob: 0.2470)
+  3. ' The' (prob: 0.1676)
+  4. ' How' (prob: 0.1550)
+  5. ' ' (prob: 0.1239)
+
+DOUBLE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3202)
+  2. ' Eggs' (prob: 0.2199)
+  3. ' The' (prob: 0.1731)
+  4. ' How' (prob: 0.1571)
+  5. ' ' (prob: 0.1296)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9010
+Shared features: 182
+
+CONSTANT HOOK:
+Next token: ' Reply'
+Top 5 tokens:
+  1. ' Reply' (prob: 0.5951)
+  2. ' reply' (prob: 0.3242)
+  3. ' comment' (prob: 0.0412)
+  4. 'Reply' (prob: 0.0257)
+  5. ' Comment' (prob: 0.0139)
+
+Convergence metrics:
+Iterations: 39
+Convergence type: cycle
+First→Final Jaccard: 0.0026
+Shared features: 1
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.051366
+None vs Double hook: 0.071238
+None vs Constant hook: 16.642887
+Single vs Double hook: 0.006641
+Single vs Constant hook: 16.360428
+Double vs Constant hook: 16.257114

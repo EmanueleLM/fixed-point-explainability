@@ -1,0 +1,120 @@
+
+============================================================
+PROMPT: Which planet is closest to the sun? A=Mercury B=Venus C=Earth D=Mars Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 25, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 25, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 25, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 25, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 25, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6000
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.4942
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7534
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 21 match those from iteration 20
+Cycle length: 1
+First→Final Jaccard similarity: 0.0213
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 8
+
+NONE HOOK:
+Next token: 'Mer'
+Top 5 tokens:
+  1. 'Mer' (prob: 0.3180)
+  2. ' A' (prob: 0.3166)
+  3. ' Mercury' (prob: 0.2175)
+  4. ' B' (prob: 0.1053)
+  5. ' D' (prob: 0.0425)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3782)
+  2. 'Mer' (prob: 0.2462)
+  3. ' Mercury' (prob: 0.1695)
+  4. ' B' (prob: 0.1514)
+  5. ' C' (prob: 0.0547)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4112)
+  2. 'Mer' (prob: 0.2072)
+  3. ' B' (prob: 0.1850)
+  4. ' Mercury' (prob: 0.1268)
+  5. ' C' (prob: 0.0698)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4400)
+  2. '/'' (prob: 0.2705)
+  3. ' and' (prob: 0.1258)
+  4. 'rador' (prob: 0.0951)
+  5. '' (prob: 0.0686)
+
+Convergence metrics:
+Iterations: 20
+Convergence type: cycle
+First→Final Jaccard: 0.0213
+Shared features: 8
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.073368
+None vs Double hook: 0.138524
+None vs Constant hook: 9.787764
+Single vs Double hook: 0.016335
+Single vs Constant hook: 9.258361
+Double vs Constant hook: 9.232639

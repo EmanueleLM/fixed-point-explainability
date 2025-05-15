@@ -1,0 +1,5 @@
+version,top_token,top_token_is_right,top_5_right,jaccard,kl_div
+base, Paris,True,True,NA,NA
+single, Paris,True,True,NA,0.052894480526447296
+double, Paris,True,True,0.8731707317073171,0.07686329632997513
+constant, which,False,False,0.005235602094240838,18.432315826416016

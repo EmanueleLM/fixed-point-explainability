@@ -1,0 +1,116 @@
+
+============================================================
+PROMPT: What is the longest river in the world? A=Amazon B=Nile C=Yangtze D=Mississippi Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 27, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 27, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 27, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 176
+Reactivation ratio: 0.9167 (91.67%)
+Jaccard similarity: 0.8462 (84.62%)
+Output shape: torch.Size([1, 27, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 27, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6696
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5178
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6067
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 19 match those from iteration 18
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: 'Amazon'
+Top 5 tokens:
+  1. 'Amazon' (prob: 0.3337)
+  2. ' A' (prob: 0.2955)
+  3. ' Amazon' (prob: 0.1604)
+  4. ' B' (prob: 0.1207)
+  5. ' C' (prob: 0.0897)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4166)
+  2. ' B' (prob: 0.1783)
+  3. 'Amazon' (prob: 0.1751)
+  4. ' C' (prob: 0.1443)
+  5. ' Amazon' (prob: 0.0858)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4294)
+  2. ' B' (prob: 0.1996)
+  3. ' C' (prob: 0.1635)
+  4. 'Amazon' (prob: 0.1200)
+  5. ' D' (prob: 0.0874)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8462
+Shared features: 176
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3956)
+  2. '/'' (prob: 0.2857)
+  3. 'rador' (prob: 0.1223)
+  4. ' and' (prob: 0.1126)
+  5. '' (prob: 0.0838)
+
+Convergence metrics:
+Iterations: 18
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.147188
+None vs Double hook: 0.269366
+None vs Constant hook: 10.510254
+Single vs Double hook: 0.022643
+Single vs Constant hook: 9.841020
+Double vs Constant hook: 9.830590

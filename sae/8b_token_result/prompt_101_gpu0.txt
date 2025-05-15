@@ -1,0 +1,134 @@
+
+============================================================
+PROMPT: What is the color of most leaves?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 9, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 9, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 180
+Reactivation ratio: 0.9375 (93.75%)
+Jaccard similarity: 0.8824 (88.24%)
+Output shape: torch.Size([1, 9, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 28 match those from iteration 27
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' Green'
+Top 5 tokens:
+  1. ' Green' (prob: 0.3082)
+  2. ' What' (prob: 0.2279)
+  3. ' A' (prob: 0.2086)
+  4. ' Why' (prob: 0.1312)
+  5. ' The' (prob: 0.1241)
+
+SINGLE HOOK:
+Next token: ' Green'
+Top 5 tokens:
+  1. ' Green' (prob: 0.2887)
+  2. ' A' (prob: 0.2389)
+  3. ' What' (prob: 0.2143)
+  4. ' Why' (prob: 0.1441)
+  5. ' The' (prob: 0.1141)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.2738)
+  2. ' Green' (prob: 0.2359)
+  3. ' What' (prob: 0.2174)
+  4. ' Why' (prob: 0.1565)
+  5. ' The' (prob: 0.1165)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8824
+Shared features: 180
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3506)
+  2. ' and' (prob: 0.2366)
+  3. '/'' (prob: 0.2010)
+  4. 'rador' (prob: 0.1495)
+  5. ' which' (prob: 0.0623)
+
+Convergence metrics:
+Iterations: 27
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.109207
+None vs Double hook: 0.137252
+None vs Constant hook: 6.878428
+Single vs Double hook: 0.012837
+Single vs Constant hook: 6.885153
+Double vs Constant hook: 6.819193

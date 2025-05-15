@@ -1,0 +1,116 @@
+
+============================================================
+PROMPT: Which sea separates Europe from Africa? A=Mediterranean Sea B=Baltic Sea C=Black Sea D=Red Sea Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 33, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 33, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 33, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 177
+Reactivation ratio: 0.9219 (92.19%)
+Jaccard similarity: 0.8551 (85.51%)
+Output shape: torch.Size([1, 33, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 33, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6000
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.5299
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 19 match those from iteration 18
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4625)
+  2. ' Mediterranean' (prob: 0.2752)
+  3. ' D' (prob: 0.1231)
+  4. ' C' (prob: 0.0698)
+  5. ' B' (prob: 0.0695)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.5547)
+  2. ' D' (prob: 0.1205)
+  3. ' B' (prob: 0.1152)
+  4. ' Mediterranean' (prob: 0.1066)
+  5. ' C' (prob: 0.1030)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.5412)
+  2. ' B' (prob: 0.1380)
+  3. ' D' (prob: 0.1266)
+  4. ' C' (prob: 0.1140)
+  5. 'The' (prob: 0.0802)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8551
+Shared features: 177
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3564)
+  2. '/'' (prob: 0.3293)
+  3. 'rador' (prob: 0.1278)
+  4. ' and' (prob: 0.1118)
+  5. '' (prob: 0.0748)
+
+Convergence metrics:
+Iterations: 18
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.165290
+None vs Double hook: 0.280080
+None vs Constant hook: 8.751463
+Single vs Double hook: 0.018883
+Single vs Constant hook: 8.130682
+Double vs Constant hook: 7.972308

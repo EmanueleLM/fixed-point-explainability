@@ -1,0 +1,152 @@
+
+============================================================
+PROMPT: The meaning of life is simply
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 7, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 7, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 7, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 172
+Reactivation ratio: 0.8958 (89.58%)
+Jaccard similarity: 0.8113 (81.13%)
+Output shape: torch.Size([1, 7, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 7, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.7297
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 37 match those from iteration 36
+Cycle length: 1
+First→Final Jaccard similarity: 0.0667
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 24
+
+============================================================
+PROMPT: The meaning of life is simply
+============================================================
+
+NONE HOOK:
+Next token: ' to'
+Top 5 tokens:
+  1. ' to' (prob: 0.4561)
+  2. ' this' (prob: 0.2336)
+  3. ' the' (prob: 0.1410)
+  4. ' that' (prob: 0.1284)
+  5. ' a' (prob: 0.0409)
+
+SINGLE HOOK:
+Next token: ' to'
+Top 5 tokens:
+  1. ' to' (prob: 0.6499)
+  2. ' this' (prob: 0.1620)
+  3. ' that' (prob: 0.0891)
+  4. ' the' (prob: 0.0732)
+  5. ' what' (prob: 0.0258)
+
+DOUBLE HOOK:
+Next token: ' to'
+Top 5 tokens:
+  1. ' to' (prob: 0.6909)
+  2. ' this' (prob: 0.1425)
+  3. ' that' (prob: 0.0848)
+  4. ' the' (prob: 0.0500)
+  5. ' living' (prob: 0.0319)
+
+CONSTANT HOOK:
+Next token: ' life'
+Top 5 tokens:
+  1. ' life' (prob: 0.8479)
+  2. ' Life' (prob: 0.0610)
+  3. 'life' (prob: 0.0419)
+  4. '.life' (prob: 0.0317)
+  5. ' experienced' (prob: 0.0175)
+
+⚠️ None hook and Constant hook predict different tokens!
+
+⚠️ Single hook and Constant hook predict different tokens!
+
+⚠️ Double hook and Constant hook predict different tokens!
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.193773
+None vs Double hook: 0.265428
+None vs Constant hook: 9.136087
+Single vs Double hook: 0.016555
+Single vs Constant hook: 9.923128
+Double vs Constant hook: 9.906388

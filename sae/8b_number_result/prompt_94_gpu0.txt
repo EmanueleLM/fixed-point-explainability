@@ -1,0 +1,148 @@
+
+============================================================
+PROMPT: 25 × 2=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 6, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 6, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 6, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 183
+Reactivation ratio: 0.9531 (95.31%)
+Jaccard similarity: 0.9104 (91.04%)
+Output shape: torch.Size([1, 6, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 6, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.7534
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.6552
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.5673
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.6410
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 32 match those from iteration 31
+Cycle length: 1
+First→Final Jaccard similarity: 0.0213
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 8
+
+NONE HOOK:
+Next token: '50'
+Top 5 tokens:
+  1. '50' (prob: 0.4658)
+  2. ' ' (prob: 0.3836)
+  3. '?
+' (prob: 0.0833)
+  4. '?
+' (prob: 0.0386)
+  5. '?' (prob: 0.0286)
+
+SINGLE HOOK:
+Next token: '50'
+Top 5 tokens:
+  1. '50' (prob: 0.5363)
+  2. ' ' (prob: 0.2449)
+  3. '?
+' (prob: 0.1496)
+  4. '?
+' (prob: 0.0509)
+  5. '?' (prob: 0.0184)
+
+DOUBLE HOOK:
+Next token: '50'
+Top 5 tokens:
+  1. '50' (prob: 0.5473)
+  2. ' ' (prob: 0.1976)
+  3. '?
+' (prob: 0.1737)
+  4. '?
+' (prob: 0.0603)
+  5. '?' (prob: 0.0212)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9104
+Shared features: 183
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4670)
+  2. '/'' (prob: 0.2575)
+  3. ' and' (prob: 0.1232)
+  4. 'rador' (prob: 0.0919)
+  5. '' (prob: 0.0604)
+
+Convergence metrics:
+Iterations: 31
+Convergence type: cycle
+First→Final Jaccard: 0.0213
+Shared features: 8
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.076345
+None vs Double hook: 0.127700
+None vs Constant hook: 10.099718
+Single vs Double hook: 0.010155
+Single vs Constant hook: 9.714455
+Double vs Constant hook: 9.743800

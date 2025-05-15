@@ -1,0 +1,114 @@
+
+============================================================
+PROMPT: The relationship between language and thought suggests that
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 9, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 9, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 183
+Reactivation ratio: 0.9531 (95.31%)
+Jaccard similarity: 0.9104 (91.04%)
+Output shape: torch.Size([1, 9, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7534
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6842
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6696
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.6916
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.7534
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.0240
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 9
+
+============================================================
+PROMPT: The relationship between language and thought suggests that
+============================================================
+
+NONE HOOK:
+Next token: ' language'
+Top 5 tokens:
+  1. ' language' (prob: 0.3711)
+  2. ' the' (prob: 0.3661)
+  3. ' there' (prob: 0.1238)
+  4. ' we' (prob: 0.0710)
+  5. ' thought' (prob: 0.0680)
+
+SINGLE HOOK:
+Next token: ' language'
+Top 5 tokens:
+  1. ' language' (prob: 0.3844)
+  2. ' the' (prob: 0.3718)
+  3. ' there' (prob: 0.1098)
+  4. ' a' (prob: 0.0673)
+  5. ' thought' (prob: 0.0667)
+
+DOUBLE HOOK:
+Next token: ' language'
+Top 5 tokens:
+  1. ' language' (prob: 0.4011)
+  2. ' the' (prob: 0.3600)
+  3. ' there' (prob: 0.1030)
+  4. ' a' (prob: 0.0698)
+  5. ' thought' (prob: 0.0661)
+
+CONSTANT HOOK:
+Next token: ' there'
+Top 5 tokens:
+  1. ' there' (prob: 0.9421)
+  2. ' we' (prob: 0.0459)
+  3. ' they' (prob: 0.0111)
+  4. ' it' (prob: 0.0009)
+  5. 'there' (prob: 0.0000)
+
+⚠️ None hook and Constant hook predict different tokens!
+
+⚠️ Single hook and Constant hook predict different tokens!
+
+⚠️ Double hook and Constant hook predict different tokens!
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.042079
+None vs Double hook: 0.056360
+None vs Constant hook: 17.367805
+Single vs Double hook: 0.007269
+Single vs Constant hook: 17.814976
+Double vs Constant hook: 17.959948

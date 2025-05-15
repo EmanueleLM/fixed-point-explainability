@@ -1,0 +1,142 @@
+
+============================================================
+PROMPT: What kind of bug glows at night?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 10, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 10, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 10, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 10, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 10, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7696
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.7455
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.6271
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.4884
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.6000
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 32 match those from iteration 31
+Cycle length: 1
+First→Final Jaccard similarity: 0.0000
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 0
+
+NONE HOOK:
+Next token: ' Fire'
+Top 5 tokens:
+  1. ' Fire' (prob: 0.3369)
+  2. ' The' (prob: 0.2320)
+  3. ' A' (prob: 0.1790)
+  4. ' What' (prob: 0.1588)
+  5. ' ' (prob: 0.0934)
+
+SINGLE HOOK:
+Next token: ' Fire'
+Top 5 tokens:
+  1. ' Fire' (prob: 0.2737)
+  2. ' The' (prob: 0.2648)
+  3. ' What' (prob: 0.1886)
+  4. ' A' (prob: 0.1492)
+  5. ' (' (prob: 0.1237)
+
+DOUBLE HOOK:
+Next token: ' Fire'
+Top 5 tokens:
+  1. ' Fire' (prob: 0.2697)
+  2. ' The' (prob: 0.2388)
+  3. ' What' (prob: 0.2044)
+  4. ' (' (prob: 0.1523)
+  5. ' A' (prob: 0.1349)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: ' بوابة'
+Top 5 tokens:
+  1. ' بوابة' (prob: 0.6860)
+  2. 'most' (prob: 0.1449)
+  3. 'edException' (prob: 0.0704)
+  4. 'room' (prob: 0.0559)
+  5. 'ward' (prob: 0.0427)
+
+Convergence metrics:
+Iterations: 31
+Convergence type: cycle
+First→Final Jaccard: 0.0000
+Shared features: 0
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.079681
+None vs Double hook: 0.123495
+None vs Constant hook: 8.876518
+Single vs Double hook: 0.016110
+Single vs Constant hook: 8.641018
+Double vs Constant hook: 8.502408

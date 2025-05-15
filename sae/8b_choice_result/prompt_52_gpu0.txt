@@ -1,0 +1,128 @@
+
+============================================================
+PROMPT: What is the most abundant element in the universe? A=Helium B=Hydrogen C=Oxygen D=Carbon Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 29, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 29, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 29, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 175
+Reactivation ratio: 0.9115 (91.15%)
+Jaccard similarity: 0.8373 (83.73%)
+Output shape: torch.Size([1, 29, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 29, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.5610
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.5178
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 25 match those from iteration 24
+Cycle length: 1
+First→Final Jaccard similarity: 0.0213
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 8
+
+NONE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.4409)
+  2. ' A' (prob: 0.1861)
+  3. ' Hydro' (prob: 0.1855)
+  4. 'Hy' (prob: 0.1411)
+  5. ' Hel' (prob: 0.0464)
+
+SINGLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.4539)
+  2. ' A' (prob: 0.2385)
+  3. 'Hy' (prob: 0.1765)
+  4. ' Hydro' (prob: 0.0832)
+  5. ' Hel' (prob: 0.0479)
+
+DOUBLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.4722)
+  2. ' A' (prob: 0.2912)
+  3. 'Hy' (prob: 0.1161)
+  4. ' Hydro' (prob: 0.0682)
+  5. ' Hel' (prob: 0.0523)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8373
+Shared features: 175
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4711)
+  2. '/'' (prob: 0.2558)
+  3. ' and' (prob: 0.1216)
+  4. 'rador' (prob: 0.0914)
+  5. '' (prob: 0.0600)
+
+Convergence metrics:
+Iterations: 24
+Convergence type: cycle
+First→Final Jaccard: 0.0213
+Shared features: 8
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.085390
+None vs Double hook: 0.125689
+None vs Constant hook: 9.522803
+Single vs Double hook: 0.019548
+Single vs Constant hook: 9.269556
+Double vs Constant hook: 9.208607

@@ -1,0 +1,150 @@
+
+============================================================
+PROMPT: What is a small green vegetable in a pod?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 11, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 11, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 11, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.6552
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.5802
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.6552
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 36 match those from iteration 35
+Cycle length: 1
+First→Final Jaccard similarity: 0.0026
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 1
+
+NONE HOOK:
+Next token: ' The'
+Top 5 tokens:
+  1. ' The' (prob: 0.2170)
+  2. ' What' (prob: 0.2162)
+  3. ' It' (prob: 0.2097)
+  4. ' (' (prob: 0.2055)
+  5. ' A' (prob: 0.1516)
+
+SINGLE HOOK:
+Next token: ' ('
+Top 5 tokens:
+  1. ' (' (prob: 0.2247)
+  2. ' It' (prob: 0.2232)
+  3. ' The' (prob: 0.2070)
+  4. ' What' (prob: 0.1818)
+  5. ' I' (prob: 0.1633)
+
+DOUBLE HOOK:
+Next token: ' ('
+Top 5 tokens:
+  1. ' (' (prob: 0.2178)
+  2. ' The' (prob: 0.2139)
+  3. ' It' (prob: 0.2130)
+  4. ' -' (prob: 0.1783)
+  5. ' I' (prob: 0.1770)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: 'iating'
+Top 5 tokens:
+  1. 'iating' (prob: 0.5055)
+  2. 'led' (prob: 0.2596)
+  3. ' latter' (prob: 0.0863)
+  4. 'carousel' (prob: 0.0821)
+  5. '/ex' (prob: 0.0665)
+
+Convergence metrics:
+Iterations: 35
+Convergence type: cycle
+First→Final Jaccard: 0.0026
+Shared features: 1
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.114492
+None vs Double hook: 0.154363
+None vs Constant hook: 9.019508
+Single vs Double hook: 0.019399
+Single vs Constant hook: 8.728289
+Double vs Constant hook: 8.752990

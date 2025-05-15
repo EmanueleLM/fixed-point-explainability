@@ -1,0 +1,116 @@
+
+============================================================
+PROMPT: What is the largest desert in the world? A=Sahara B=Arabian C=Gobi D=Antarctic Desert Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 32, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 32, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 32, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 181
+Reactivation ratio: 0.9427 (94.27%)
+Jaccard similarity: 0.8916 (89.16%)
+Output shape: torch.Size([1, 32, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 32, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6340
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5000
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7220
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 19 match those from iteration 18
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3962)
+  2. ' Sahara' (prob: 0.2721)
+  3. ' B' (prob: 0.1298)
+  4. ' The' (prob: 0.1205)
+  5. 'The' (prob: 0.0815)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4499)
+  2. ' B' (prob: 0.1609)
+  3. ' Sahara' (prob: 0.1429)
+  4. ' The' (prob: 0.1294)
+  5. 'The' (prob: 0.1169)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4772)
+  2. ' B' (prob: 0.1874)
+  3. ' ' (prob: 0.1171)
+  4. 'The' (prob: 0.1106)
+  5. ' C' (prob: 0.1076)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8916
+Shared features: 181
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4440)
+  2. '/'' (prob: 0.2482)
+  3. 'rador' (prob: 0.1176)
+  4. ' and' (prob: 0.1011)
+  5. '' (prob: 0.0891)
+
+Convergence metrics:
+Iterations: 18
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.084707
+None vs Double hook: 0.165922
+None vs Constant hook: 9.340227
+Single vs Double hook: 0.020577
+Single vs Constant hook: 8.839328
+Double vs Constant hook: 8.851422

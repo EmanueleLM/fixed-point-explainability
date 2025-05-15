@@ -1,0 +1,113 @@
+
+============================================================
+PROMPT: What is the capital of France? A=Berlin B=Madrid C=Paris D=Rome Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 23, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 23, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 23, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 174
+Reactivation ratio: 0.9062 (90.62%)
+Jaccard similarity: 0.8286 (82.86%)
+Output shape: torch.Size([1, 23, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 23, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5000
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6410
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5100)
+  2. 'Paris' (prob: 0.2193)
+  3. ' Paris' (prob: 0.1542)
+  4. ' A' (prob: 0.0628)
+  5. ' The' (prob: 0.0538)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4844)
+  2. ' A' (prob: 0.1698)
+  3. 'Paris' (prob: 0.1550)
+  4. ' Paris' (prob: 0.1247)
+  5. ' The' (prob: 0.0661)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4298)
+  2. ' A' (prob: 0.1949)
+  3. 'Paris' (prob: 0.1763)
+  4. ' Paris' (prob: 0.1223)
+  5. '?
+' (prob: 0.0766)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8286
+Shared features: 174
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3967)
+  2. '/'' (prob: 0.2768)
+  3. 'rador' (prob: 0.1315)
+  4. ' and' (prob: 0.1063)
+  5. '' (prob: 0.0886)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.095962
+None vs Double hook: 0.126749
+None vs Constant hook: 9.841164
+Single vs Double hook: 0.011857
+Single vs Constant hook: 8.944998
+Double vs Constant hook: 8.827844

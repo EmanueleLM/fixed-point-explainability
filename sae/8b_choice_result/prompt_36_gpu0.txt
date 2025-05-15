@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: Which planet is known as the Red Planet? A=Mars B=Mercury C=Venus D=Jupiter Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 27, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 27, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 27, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 177
+Reactivation ratio: 0.9219 (92.19%)
+Jaccard similarity: 0.8551 (85.51%)
+Output shape: torch.Size([1, 27, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 27, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6623
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5238
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6410
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' Mars'
+Top 5 tokens:
+  1. ' Mars' (prob: 0.6151)
+  2. ' A' (prob: 0.3101)
+  3. ' B' (prob: 0.0487)
+  4. ' M' (prob: 0.0133)
+  5. ' ' (prob: 0.0129)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4421)
+  2. ' Mars' (prob: 0.4129)
+  3. ' B' (prob: 0.0964)
+  4. ' a' (prob: 0.0271)
+  5. 'Red' (prob: 0.0215)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4315)
+  2. ' Mars' (prob: 0.3854)
+  3. ' B' (prob: 0.1186)
+  4. ' a' (prob: 0.0344)
+  5. ' D' (prob: 0.0301)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8551
+Shared features: 177
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3772)
+  2. '/'' (prob: 0.3121)
+  3. 'rador' (prob: 0.1353)
+  4. ' and' (prob: 0.0882)
+  5. '' (prob: 0.0872)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.149109
+None vs Double hook: 0.218724
+None vs Constant hook: 8.866677
+Single vs Double hook: 0.014600
+Single vs Constant hook: 8.660343
+Double vs Constant hook: 8.555647

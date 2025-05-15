@@ -1,0 +1,114 @@
+
+============================================================
+PROMPT: Which famous scientist developed the theory of relativity? A=Isaac Newton B=Nikola Tesla C=Albert Einstein D=Galileo Galilei Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 39, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 39, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 39, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 180
+Reactivation ratio: 0.9375 (93.75%)
+Jaccard similarity: 0.8824 (88.24%)
+Output shape: torch.Size([1, 39, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 39, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6916
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5059
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6340
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.0323
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 12
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.6162)
+  2. 'Albert' (prob: 0.1995)
+  3. ' A' (prob: 0.0697)
+  4. ' Albert' (prob: 0.0634)
+  5. ' ' (prob: 0.0512)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5870)
+  2. ' A' (prob: 0.1599)
+  3. 'Albert' (prob: 0.1227)
+  4. ' B' (prob: 0.0789)
+  5. ' D' (prob: 0.0515)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5211)
+  2. ' A' (prob: 0.1892)
+  3. 'Albert' (prob: 0.1389)
+  4. ' B' (prob: 0.0932)
+  5. ' D' (prob: 0.0576)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8824
+Shared features: 180
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4044)
+  2. '/'' (prob: 0.2828)
+  3. 'rador' (prob: 0.1328)
+  4. ' and' (prob: 0.1004)
+  5. '' (prob: 0.0796)
+
+Convergence metrics:
+Iterations: 17
+Convergence type: cycle
+First→Final Jaccard: 0.0323
+Shared features: 12
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.107899
+None vs Double hook: 0.147195
+None vs Constant hook: 10.403911
+Single vs Double hook: 0.013467
+Single vs Constant hook: 10.345354
+Double vs Constant hook: 10.042807

@@ -1,0 +1,146 @@
+
+============================================================
+PROMPT: In which country can you visit the ancient Incan citadel of Machu Picchu? A=Peru B=Mexico C=Chile D=Guatemala
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 36, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 36, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 36, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 36, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 36, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.5802
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.5422
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.7455
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 31 match those from iteration 30
+Cycle length: 1
+First→Final Jaccard similarity: 0.0026
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 1
+
+NONE HOOK:
+Next token: '
+'
+Top 5 tokens:
+  1. '
+' (prob: 0.7599)
+  2. ' ' (prob: 0.1373)
+  3. ' E' (prob: 0.0384)
+  4. '.' (prob: 0.0343)
+  5. ' Answer' (prob: 0.0301)
+
+SINGLE HOOK:
+Next token: '
+'
+Top 5 tokens:
+  1. '
+' (prob: 0.6899)
+  2. ' ' (prob: 0.1364)
+  3. ' E' (prob: 0.0844)
+  4. '.' (prob: 0.0574)
+  5. ' In' (prob: 0.0320)
+
+DOUBLE HOOK:
+Next token: '
+'
+Top 5 tokens:
+  1. '
+' (prob: 0.6864)
+  2. ' ' (prob: 0.1372)
+  3. '.' (prob: 0.0702)
+  4. ' E' (prob: 0.0602)
+  5. ' A' (prob: 0.0460)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9010
+Shared features: 182
+
+CONSTANT HOOK:
+Next token: 'aire'
+Top 5 tokens:
+  1. 'aire' (prob: 0.4193)
+  2. 'ively' (prob: 0.3724)
+  3. 'ly' (prob: 0.0863)
+  4. 'odom' (prob: 0.0669)
+  5. 'enstein' (prob: 0.0551)
+
+Convergence metrics:
+Iterations: 30
+Convergence type: cycle
+First→Final Jaccard: 0.0026
+Shared features: 1
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.065024
+None vs Double hook: 0.080761
+None vs Constant hook: 10.293957
+Single vs Double hook: 0.009752
+Single vs Constant hook: 9.913962
+Double vs Constant hook: 9.848267

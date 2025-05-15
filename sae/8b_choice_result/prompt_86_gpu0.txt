@@ -1,0 +1,110 @@
+
+============================================================
+PROMPT: What is the largest internal organ in the human body? A=Liver B=Brain C=Lung D=Heart Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 26, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 26, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 178
+Reactivation ratio: 0.9271 (92.71%)
+Jaccard similarity: 0.8641 (86.41%)
+Output shape: torch.Size([1, 26, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7696
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5673
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5118
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 16 match those from iteration 15
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4260)
+  2. ' B' (prob: 0.2170)
+  3. 'Brain' (prob: 0.1336)
+  4. ' C' (prob: 0.1167)
+  5. ' Liver' (prob: 0.1067)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4031)
+  2. ' B' (prob: 0.2579)
+  3. ' C' (prob: 0.1377)
+  4. ' D' (prob: 0.1176)
+  5. 'Brain' (prob: 0.0836)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4024)
+  2. ' B' (prob: 0.2681)
+  3. ' C' (prob: 0.1423)
+  4. ' D' (prob: 0.1258)
+  5. 'Brain' (prob: 0.0613)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8641
+Shared features: 178
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3629)
+  2. '/'' (prob: 0.3263)
+  3. 'rador' (prob: 0.1366)
+  4. ' and' (prob: 0.0882)
+  5. '' (prob: 0.0859)
+
+Convergence metrics:
+Iterations: 15
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.108378
+None vs Double hook: 0.198044
+None vs Constant hook: 10.137035
+Single vs Double hook: 0.017823
+Single vs Constant hook: 10.153225
+Double vs Constant hook: 10.326849

@@ -1,0 +1,114 @@
+
+============================================================
+PROMPT: What is the tallest mountain above sea level? A=Mount Everest B=K2 C=Kangchenjunga D=Lhotse Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 33, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 33, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 33, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 181
+Reactivation ratio: 0.9427 (94.27%)
+Jaccard similarity: 0.8916 (89.16%)
+Output shape: torch.Size([1, 33, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 33, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6696
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.4884
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.0213
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 8
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4086)
+  2. 'Mount' (prob: 0.2271)
+  3. ' B' (prob: 0.1677)
+  4. ' C' (prob: 0.1025)
+  5. ' Mount' (prob: 0.0942)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4506)
+  2. ' B' (prob: 0.1668)
+  3. 'Mount' (prob: 0.1519)
+  4. ' C' (prob: 0.1376)
+  5. 'K' (prob: 0.0931)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4503)
+  2. ' B' (prob: 0.1840)
+  3. ' C' (prob: 0.1530)
+  4. 'Mount' (prob: 0.1223)
+  5. 'K' (prob: 0.0904)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8916
+Shared features: 181
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4336)
+  2. '/'' (prob: 0.2740)
+  3. 'rador' (prob: 0.1159)
+  4. ' and' (prob: 0.0971)
+  5. '' (prob: 0.0795)
+
+Convergence metrics:
+Iterations: 17
+Convergence type: cycle
+First→Final Jaccard: 0.0213
+Shared features: 8
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.064859
+None vs Double hook: 0.104150
+None vs Constant hook: 9.655895
+Single vs Double hook: 0.009274
+Single vs Constant hook: 9.488336
+Double vs Constant hook: 9.597386

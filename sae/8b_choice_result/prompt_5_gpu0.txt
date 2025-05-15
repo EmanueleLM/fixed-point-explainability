@@ -1,0 +1,110 @@
+
+============================================================
+PROMPT: What color is an apple? A=Red B=Blue C=Yellow D=Green Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 21, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 21, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 21, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 180
+Reactivation ratio: 0.9375 (93.75%)
+Jaccard similarity: 0.8824 (88.24%)
+Output shape: torch.Size([1, 21, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 21, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5738
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5422
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 15 match those from iteration 14
+Cycle length: 1
+First→Final Jaccard similarity: 0.0350
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 13
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.2917)
+  2. ' D' (prob: 0.2661)
+  3. ' C' (prob: 0.2230)
+  4. ' B' (prob: 0.1500)
+  5. 'Red' (prob: 0.0692)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3625)
+  2. ' C' (prob: 0.2205)
+  3. ' D' (prob: 0.2122)
+  4. ' B' (prob: 0.1496)
+  5. '?
+' (prob: 0.0552)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3544)
+  2. ' C' (prob: 0.2045)
+  3. ' D' (prob: 0.2038)
+  4. ' B' (prob: 0.1599)
+  5. '?
+' (prob: 0.0774)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8824
+Shared features: 180
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4112)
+  2. '/'' (prob: 0.2762)
+  3. 'rador' (prob: 0.1339)
+  4. '' (prob: 0.0973)
+  5. ' and' (prob: 0.0814)
+
+Convergence metrics:
+Iterations: 14
+Convergence type: cycle
+First→Final Jaccard: 0.0350
+Shared features: 13
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.074114
+None vs Double hook: 0.108557
+None vs Constant hook: 8.486088
+Single vs Double hook: 0.015403
+Single vs Constant hook: 8.412878
+Double vs Constant hook: 8.499181

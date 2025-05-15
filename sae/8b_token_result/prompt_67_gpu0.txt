@@ -1,0 +1,118 @@
+
+============================================================
+PROMPT: What do you wear on your legs?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 9, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 9, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 9, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7455
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 20 match those from iteration 19
+Cycle length: 1
+First→Final Jaccard similarity: 0.1003
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 35
+
+NONE HOOK:
+Next token: ' Do'
+Top 5 tokens:
+  1. ' Do' (prob: 0.3111)
+  2. ' I' (prob: 0.2236)
+  3. ' What' (prob: 0.1870)
+  4. ' If' (prob: 0.1634)
+  5. ' Are' (prob: 0.1149)
+
+SINGLE HOOK:
+Next token: ' I'
+Top 5 tokens:
+  1. ' I' (prob: 0.3093)
+  2. ' Do' (prob: 0.2192)
+  3. ' What' (prob: 0.1958)
+  4. ' If' (prob: 0.1629)
+  5. ' The' (prob: 0.1128)
+
+DOUBLE HOOK:
+Next token: ' I'
+Top 5 tokens:
+  1. ' I' (prob: 0.3503)
+  2. ' What' (prob: 0.1821)
+  3. ' Do' (prob: 0.1746)
+  4. ' If' (prob: 0.1631)
+  5. ' The' (prob: 0.1300)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9010
+Shared features: 182
+
+CONSTANT HOOK:
+Next token: ' There'
+Top 5 tokens:
+  1. ' There' (prob: 0.7192)
+  2. ' there' (prob: 0.1220)
+  3. 'There' (prob: 0.0721)
+  4. ' Which' (prob: 0.0616)
+  5. ' which' (prob: 0.0252)
+
+Convergence metrics:
+Iterations: 19
+Convergence type: cycle
+First→Final Jaccard: 0.1003
+Shared features: 35
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.052896
+None vs Double hook: 0.100747
+None vs Constant hook: 5.127770
+Single vs Double hook: 0.016466
+Single vs Constant hook: 4.888261
+Double vs Constant hook: 4.695121

@@ -1,0 +1,114 @@
+
+============================================================
+PROMPT: What grows on trees and is red or green?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 11, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 11, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 11, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7455
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5802
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.5673
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.0186
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 7
+
+NONE HOOK:
+Next token: ' App'
+Top 5 tokens:
+  1. ' App' (prob: 0.3426)
+  2. ' The' (prob: 0.2352)
+  3. ' It' (prob: 0.1541)
+  4. ' If' (prob: 0.1483)
+  5. ' Why' (prob: 0.1198)
+
+SINGLE HOOK:
+Next token: ' App'
+Top 5 tokens:
+  1. ' App' (prob: 0.3263)
+  2. ' The' (prob: 0.2681)
+  3. ' It' (prob: 0.1806)
+  4. ' If' (prob: 0.1260)
+  5. ' That' (prob: 0.0989)
+
+DOUBLE HOOK:
+Next token: ' App'
+Top 5 tokens:
+  1. ' App' (prob: 0.2878)
+  2. ' The' (prob: 0.2786)
+  3. ' It' (prob: 0.2050)
+  4. ' If' (prob: 0.1224)
+  5. ' That' (prob: 0.1063)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9010
+Shared features: 182
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3483)
+  2. '/'' (prob: 0.2615)
+  3. ' and' (prob: 0.2261)
+  4. 'rador' (prob: 0.0998)
+  5. ' which' (prob: 0.0643)
+
+Convergence metrics:
+Iterations: 17
+Convergence type: cycle
+First→Final Jaccard: 0.0186
+Shared features: 7
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.111009
+None vs Double hook: 0.157358
+None vs Constant hook: 6.619555
+Single vs Double hook: 0.015666
+Single vs Constant hook: 6.462318
+Double vs Constant hook: 6.404717

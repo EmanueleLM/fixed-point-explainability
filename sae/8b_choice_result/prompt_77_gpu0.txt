@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: Which organelle is known as the powerhouse of the cell? A=Nucleus B=Mitochondrion C=Ribosome D=Golgi apparatus Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 38, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 38, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 38, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 38, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 38, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6481
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5059
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6991
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.7515)
+  2. ' Mit' (prob: 0.1298)
+  3. ' ' (prob: 0.0417)
+  4. ' The' (prob: 0.0404)
+  5. ' ' (prob: 0.0366)
+
+SINGLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.7647)
+  2. ' Mit' (prob: 0.0896)
+  3. ' C' (prob: 0.0519)
+  4. ' The' (prob: 0.0479)
+  5. ' A' (prob: 0.0458)
+
+DOUBLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.7282)
+  2. ' Mit' (prob: 0.0847)
+  3. ' C' (prob: 0.0673)
+  4. ' A' (prob: 0.0657)
+  5. ' b' (prob: 0.0540)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9010
+Shared features: 182
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4294)
+  2. '/'' (prob: 0.2579)
+  3. 'rador' (prob: 0.1293)
+  4. '' (prob: 0.0935)
+  5. ' and' (prob: 0.0899)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.079195
+None vs Double hook: 0.114868
+None vs Constant hook: 10.383185
+Single vs Double hook: 0.011521
+Single vs Constant hook: 9.913668
+Double vs Constant hook: 9.617304

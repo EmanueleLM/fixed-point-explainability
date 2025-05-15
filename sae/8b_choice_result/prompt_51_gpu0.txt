@@ -1,0 +1,118 @@
+
+============================================================
+PROMPT: Which blood type is known as the universal donor? A=O negative B=A positive C=AB positive D=B negative Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 31, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 31, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 31, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 178
+Reactivation ratio: 0.9271 (92.71%)
+Jaccard similarity: 0.8641 (86.41%)
+Output shape: torch.Size([1, 31, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 31, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5484
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5178
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 20 match those from iteration 19
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: 'O'
+Top 5 tokens:
+  1. 'O' (prob: 0.3819)
+  2. ' A' (prob: 0.2306)
+  3. ' D' (prob: 0.1482)
+  4. ' B' (prob: 0.1353)
+  5. ' C' (prob: 0.1040)
+
+SINGLE HOOK:
+Next token: 'O'
+Top 5 tokens:
+  1. 'O' (prob: 0.4537)
+  2. ' A' (prob: 0.2328)
+  3. ' B' (prob: 0.1301)
+  4. ' D' (prob: 0.1024)
+  5. ' C' (prob: 0.0811)
+
+DOUBLE HOOK:
+Next token: 'O'
+Top 5 tokens:
+  1. 'O' (prob: 0.5005)
+  2. ' A' (prob: 0.2204)
+  3. ' B' (prob: 0.1195)
+  4. ' D' (prob: 0.0878)
+  5. ' C' (prob: 0.0718)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8641
+Shared features: 178
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4456)
+  2. '/'' (prob: 0.2463)
+  3. ' and' (prob: 0.1233)
+  4. 'rador' (prob: 0.1053)
+  5. '' (prob: 0.0794)
+
+Convergence metrics:
+Iterations: 19
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.055980
+None vs Double hook: 0.093088
+None vs Constant hook: 9.898579
+Single vs Double hook: 0.011475
+Single vs Constant hook: 9.912578
+Double vs Constant hook: 9.804500

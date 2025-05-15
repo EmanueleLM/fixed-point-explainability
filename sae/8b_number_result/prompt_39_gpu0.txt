@@ -1,0 +1,136 @@
+
+============================================================
+PROMPT: 4³=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 4, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 4, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 4, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 171
+Reactivation ratio: 0.8906 (89.06%)
+Jaccard similarity: 0.8028 (80.28%)
+Output shape: torch.Size([1, 4, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 4, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.5868
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.4713
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 29 match those from iteration 28
+Cycle length: 1
+First→Final Jaccard similarity: 0.0132
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 5
+
+NONE HOOK:
+Next token: '64'
+Top 5 tokens:
+  1. '64' (prob: 0.5609)
+  2. '4' (prob: 0.2533)
+  3. ' ' (prob: 0.1186)
+  4. '81' (prob: 0.0398)
+  5. '16' (prob: 0.0275)
+
+SINGLE HOOK:
+Next token: '4'
+Top 5 tokens:
+  1. '4' (prob: 0.3909)
+  2. '64' (prob: 0.3625)
+  3. ' ' (prob: 0.1411)
+  4. '16' (prob: 0.0584)
+  5. '8' (prob: 0.0471)
+
+DOUBLE HOOK:
+Next token: '64'
+Top 5 tokens:
+  1. '64' (prob: 0.4595)
+  2. '4' (prob: 0.3377)
+  3. ' ' (prob: 0.1072)
+  4. '16' (prob: 0.0572)
+  5. '8' (prob: 0.0383)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8028
+Shared features: 171
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4989)
+  2. '/'' (prob: 0.2331)
+  3. ' and' (prob: 0.1322)
+  4. 'rador' (prob: 0.0803)
+  5. '' (prob: 0.0554)
+
+Convergence metrics:
+Iterations: 28
+Convergence type: cycle
+First→Final Jaccard: 0.0132
+Shared features: 5
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.239188
+None vs Double hook: 0.212159
+None vs Constant hook: 10.533646
+Single vs Double hook: 0.030464
+Single vs Constant hook: 9.262960
+Double vs Constant hook: 9.843568

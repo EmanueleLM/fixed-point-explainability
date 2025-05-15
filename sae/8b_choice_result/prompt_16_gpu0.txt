@@ -1,0 +1,110 @@
+
+============================================================
+PROMPT: Which country gifted the Statue of Liberty to the United States? A=France B=United Kingdom C=Spain D=Italy Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 30, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 30, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 30, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 177
+Reactivation ratio: 0.9219 (92.19%)
+Jaccard similarity: 0.8551 (85.51%)
+Output shape: torch.Size([1, 30, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 30, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.6769
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5059
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6340
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 16 match those from iteration 15
+Cycle length: 1
+First→Final Jaccard similarity: 0.0407
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 15
+
+NONE HOOK:
+Next token: 'France'
+Top 5 tokens:
+  1. 'France' (prob: 0.4233)
+  2. ' France' (prob: 0.3144)
+  3. ' A' (prob: 0.2430)
+  4. ' B' (prob: 0.0101)
+  5. ' ' (prob: 0.0092)
+
+SINGLE HOOK:
+Next token: 'France'
+Top 5 tokens:
+  1. 'France' (prob: 0.3794)
+  2. ' A' (prob: 0.3644)
+  3. ' France' (prob: 0.2012)
+  4. ' B' (prob: 0.0334)
+  5. 'Answer' (prob: 0.0217)
+
+DOUBLE HOOK:
+Next token: 'France'
+Top 5 tokens:
+  1. 'France' (prob: 0.4257)
+  2. ' A' (prob: 0.3453)
+  3. ' France' (prob: 0.1598)
+  4. ' B' (prob: 0.0395)
+  5. 'Answer' (prob: 0.0297)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8551
+Shared features: 177
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3171)
+  2. '/'' (prob: 0.3125)
+  3. 'rador' (prob: 0.1395)
+  4. ' and' (prob: 0.1309)
+  5. '' (prob: 0.1000)
+
+Convergence metrics:
+Iterations: 15
+Convergence type: cycle
+First→Final Jaccard: 0.0407
+Shared features: 15
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.142812
+None vs Double hook: 0.214380
+None vs Constant hook: 11.786118
+Single vs Double hook: 0.018171
+Single vs Constant hook: 10.372076
+Double vs Constant hook: 10.113967

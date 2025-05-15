@@ -1,0 +1,5 @@
+version,top_token,top_token_is_right,top_5_right,jaccard,kl_div
+base, Mars,False,True,NA,NA
+single, A,True,True,NA,0.14910896122455597
+double, A,True,True,0.855072463768116,0.218724325299263
+constant,️,False,False,0.029490616621983913,8.866677284240723

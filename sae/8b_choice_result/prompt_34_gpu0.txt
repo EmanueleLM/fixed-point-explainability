@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: Which organ pumps blood through the human body? A=Lungs B=Heart C=Kidneys D=Liver Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 25, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 25, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 25, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 25, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 25, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6916
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5238
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6203
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.5782)
+  2. 'Heart' (prob: 0.1450)
+  3. ' A' (prob: 0.1060)
+  4. ' Heart' (prob: 0.1030)
+  5. ' C' (prob: 0.0679)
+
+SINGLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.5857)
+  2. ' A' (prob: 0.1494)
+  3. ' C' (prob: 0.1036)
+  4. 'Heart' (prob: 0.0845)
+  5. ' Heart' (prob: 0.0769)
+
+DOUBLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.5516)
+  2. ' A' (prob: 0.1975)
+  3. ' C' (prob: 0.1176)
+  4. 'Heart' (prob: 0.0678)
+  5. ' Heart' (prob: 0.0654)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4248)
+  2. '/'' (prob: 0.2619)
+  3. 'rador' (prob: 0.1339)
+  4. '' (prob: 0.0928)
+  5. ' and' (prob: 0.0866)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.069856
+None vs Double hook: 0.118960
+None vs Constant hook: 9.603470
+Single vs Double hook: 0.015027
+Single vs Constant hook: 9.751089
+Double vs Constant hook: 9.484859

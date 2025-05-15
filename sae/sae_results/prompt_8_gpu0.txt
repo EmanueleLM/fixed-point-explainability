@@ -1,0 +1,177 @@
+
+============================================================
+PROMPT: The most beautiful mathematical equation is
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 7, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 7, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 7, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 183
+Reactivation ratio: 0.9531 (95.31%)
+Jaccard similarity: 0.9104 (91.04%)
+Output shape: torch.Size([1, 7, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 7, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.7297
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.4884
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.3863
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 37, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 38, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 39, Jaccard similarity: 0.7696
+  Active features: 192
+Iteration 40, Jaccard similarity: 0.5868
+  Active features: 192
+Iteration 41, Jaccard similarity: 0.5673
+  Active features: 192
+Iteration 42, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 43, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 44, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 45, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 46 match those from iteration 45
+Cycle length: 1
+First→Final Jaccard similarity: 0.0000
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 0
+
+============================================================
+PROMPT: The most beautiful mathematical equation is
+============================================================
+
+NONE HOOK:
+Next token: ' the'
+Top 5 tokens:
+  1. ' the' (prob: 0.4208)
+  2. ' Euler' (prob: 0.2846)
+  3. '
+' (prob: 0.1116)
+  4. ' a' (prob: 0.1109)
+  5. ' E' (prob: 0.0720)
+
+SINGLE HOOK:
+Next token: ' the'
+Top 5 tokens:
+  1. ' the' (prob: 0.3759)
+  2. '
+' (prob: 0.2130)
+  3. ' pi' (prob: 0.1796)
+  4. '…
+' (prob: 0.1195)
+  5. ':
+' (prob: 0.1120)
+
+DOUBLE HOOK:
+Next token: ' the'
+Top 5 tokens:
+  1. ' the' (prob: 0.3512)
+  2. '
+' (prob: 0.2613)
+  3. ' pi' (prob: 0.1721)
+  4. '…
+' (prob: 0.1104)
+  5. ':
+' (prob: 0.1051)
+
+CONSTANT HOOK:
+Next token: 'ones'
+Top 5 tokens:
+  1. 'ones' (prob: 0.9727)
+  2. ' ones' (prob: 0.0125)
+  3. ' themselves' (prob: 0.0113)
+  4. 'paces' (prob: 0.0023)
+  5. ' respective' (prob: 0.0011)
+
+⚠️ None hook and Constant hook predict different tokens!
+
+⚠️ Single hook and Constant hook predict different tokens!
+
+⚠️ Double hook and Constant hook predict different tokens!
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.280696
+None vs Double hook: 0.323819
+None vs Constant hook: 12.044914
+Single vs Double hook: 0.011042
+Single vs Constant hook: 12.050192
+Double vs Constant hook: 12.017771

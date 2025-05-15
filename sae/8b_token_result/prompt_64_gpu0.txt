@@ -1,0 +1,117 @@
+
+============================================================
+PROMPT: What is the name of the red fruit used in ketchup?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 14, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 14, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 14, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 175
+Reactivation ratio: 0.9115 (91.15%)
+Jaccard similarity: 0.8373 (83.73%)
+Output shape: torch.Size([1, 14, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 14, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.7455
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.6842
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.6991
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9692
+  Active features: 192
+Detected cycle! Indices at iteration 19 match those from iteration 18
+Cycle length: 1
+First→Final Jaccard similarity: 0.0213
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 8
+
+NONE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3121)
+  2. ' The' (prob: 0.2401)
+  3. ' Tom' (prob: 0.1616)
+  4. ' -' (prob: 0.1466)
+  5. ' (' (prob: 0.1395)
+
+SINGLE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3445)
+  2. ' The' (prob: 0.2137)
+  3. ' Tom' (prob: 0.1915)
+  4. ' Tomato' (prob: 0.1410)
+  5. ' It' (prob: 0.1094)
+
+DOUBLE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3211)
+  2. ' The' (prob: 0.2233)
+  3. ' Tom' (prob: 0.1893)
+  4. ' Tomato' (prob: 0.1401)
+  5. ' 
+' (prob: 0.1263)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8373
+Shared features: 175
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3444)
+  2. ' and' (prob: 0.2181)
+  3. '/'' (prob: 0.2151)
+  4. 'rador' (prob: 0.1415)
+  5. ' which' (prob: 0.0809)
+
+Convergence metrics:
+Iterations: 18
+Convergence type: cycle
+First→Final Jaccard: 0.0213
+Shared features: 8
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.084197
+None vs Double hook: 0.116750
+None vs Constant hook: 6.359167
+Single vs Double hook: 0.013207
+Single vs Constant hook: 6.385910
+Double vs Constant hook: 6.389907

@@ -1,0 +1,114 @@
+
+============================================================
+PROMPT: What shape has three sides?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 7, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 7, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 7, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 177
+Reactivation ratio: 0.9219 (92.19%)
+Jaccard similarity: 0.8551 (85.51%)
+Output shape: torch.Size([1, 7, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 7, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7297
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6203
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6623
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.0240
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 9
+
+NONE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3077)
+  2. ' A' (prob: 0.2854)
+  3. ' Triangle' (prob: 0.1857)
+  4. ' Tri' (prob: 0.1208)
+  5. ' (' (prob: 0.1004)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3042)
+  2. ' What' (prob: 0.2892)
+  3. ' (' (prob: 0.1571)
+  4. ' Triangle' (prob: 0.1248)
+  5. ' ' (prob: 0.1247)
+
+DOUBLE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.2892)
+  2. ' A' (prob: 0.2783)
+  3. ' (' (prob: 0.1670)
+  4. ' ' (prob: 0.1435)
+  5. ' Triangle' (prob: 0.1222)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8551
+Shared features: 177
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3497)
+  2. ' and' (prob: 0.2409)
+  3. '/'' (prob: 0.2094)
+  4. 'rador' (prob: 0.1169)
+  5. ' which' (prob: 0.0831)
+
+Convergence metrics:
+Iterations: 17
+Convergence type: cycle
+First→Final Jaccard: 0.0240
+Shared features: 9
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.072938
+None vs Double hook: 0.097202
+None vs Constant hook: 6.940948
+Single vs Double hook: 0.009186
+Single vs Constant hook: 6.763353
+Double vs Constant hook: 6.648004

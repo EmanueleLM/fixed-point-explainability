@@ -1,0 +1,158 @@
+
+============================================================
+PROMPT: What do you call the sound a dog makes?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 11, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 11, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 11, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 37, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 38, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 39, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 40 match those from iteration 39
+Cycle length: 1
+First→Final Jaccard similarity: 0.0132
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 5
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3897)
+  2. ' Bark' (prob: 0.2179)
+  3. ' What' (prob: 0.1728)
+  4. ' The' (prob: 0.1180)
+  5. ' B' (prob: 0.1017)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3253)
+  2. ' Bark' (prob: 0.1897)
+  3. ' Wo' (prob: 0.1832)
+  4. ' What' (prob: 0.1720)
+  5. ' B' (prob: 0.1298)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.2801)
+  2. ' Bark' (prob: 0.2258)
+  3. ' Wo' (prob: 0.1953)
+  4. ' What' (prob: 0.1747)
+  5. ' The' (prob: 0.1242)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3484)
+  2. '/'' (prob: 0.2443)
+  3. ' and' (prob: 0.2204)
+  4. 'rador' (prob: 0.1249)
+  5. ' which' (prob: 0.0620)
+
+Convergence metrics:
+Iterations: 39
+Convergence type: cycle
+First→Final Jaccard: 0.0132
+Shared features: 5
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.084401
+None vs Double hook: 0.114854
+None vs Constant hook: 6.801642
+Single vs Double hook: 0.012798
+Single vs Constant hook: 6.642094
+Double vs Constant hook: 6.596272

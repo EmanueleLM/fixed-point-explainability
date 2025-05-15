@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: What do you use to unlock a door?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 10, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 10, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 10, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 185
+Reactivation ratio: 0.9635 (96.35%)
+Jaccard similarity: 0.9296 (92.96%)
+Output shape: torch.Size([1, 10, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 10, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7297
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6842
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6916
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9692
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0240
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 9
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.5463)
+  2. ' Do' (prob: 0.1197)
+  3. ' You' (prob: 0.1151)
+  4. ' The' (prob: 0.1137)
+  5. ' If' (prob: 0.1051)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.5460)
+  2. ' You' (prob: 0.1321)
+  3. ' If' (prob: 0.1257)
+  4. ' The' (prob: 0.1079)
+  5. ' Keys' (prob: 0.0884)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4840)
+  2. ' If' (prob: 0.1541)
+  3. ' You' (prob: 0.1483)
+  4. ' The' (prob: 0.1166)
+  5. ' Most' (prob: 0.0970)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9296
+Shared features: 185
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3292)
+  2. ' and' (prob: 0.2327)
+  3. '/'' (prob: 0.2191)
+  4. 'rador' (prob: 0.1391)
+  5. ' which' (prob: 0.0799)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0240
+Shared features: 9
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.045743
+None vs Double hook: 0.076356
+None vs Constant hook: 7.506718
+Single vs Double hook: 0.013773
+Single vs Constant hook: 7.284689
+Double vs Constant hook: 7.052208

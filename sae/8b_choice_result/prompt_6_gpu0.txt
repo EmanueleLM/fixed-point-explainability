@@ -1,0 +1,116 @@
+
+============================================================
+PROMPT: How many legs does a human have? A=1 B=2 C=3 D=4 Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 23, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 23, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 23, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 23, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 23, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6991
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.4769
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6203
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 19 match those from iteration 18
+Cycle length: 1
+First→Final Jaccard similarity: 0.0323
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 12
+
+NONE HOOK:
+Next token: ' D'
+Top 5 tokens:
+  1. ' D' (prob: 0.3466)
+  2. ' A' (prob: 0.1859)
+  3. ' C' (prob: 0.1758)
+  4. ' B' (prob: 0.1702)
+  5. ' ' (prob: 0.1215)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.2901)
+  2. ' D' (prob: 0.2817)
+  3. ' B' (prob: 0.2053)
+  4. ' C' (prob: 0.1661)
+  5. ' ' (prob: 0.0567)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3023)
+  2. ' D' (prob: 0.2637)
+  3. ' B' (prob: 0.2116)
+  4. ' C' (prob: 0.1706)
+  5. '4' (prob: 0.0518)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4098)
+  2. '/'' (prob: 0.3027)
+  3. 'rador' (prob: 0.1147)
+  4. ' and' (prob: 0.1037)
+  5. '' (prob: 0.0692)
+
+Convergence metrics:
+Iterations: 18
+Convergence type: cycle
+First→Final Jaccard: 0.0323
+Shared features: 12
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.127335
+None vs Double hook: 0.153314
+None vs Constant hook: 9.751831
+Single vs Double hook: 0.004323
+Single vs Constant hook: 10.573170
+Double vs Constant hook: 10.561588

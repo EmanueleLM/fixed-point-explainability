@@ -1,0 +1,106 @@
+
+============================================================
+PROMPT: Who is credited with inventing the telephone? A=Thomas Edison B=Alexander Graham Bell C=Nikola Tesla D=Guglielmo Marconi Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 41, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 41, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 41, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 41, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 41, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7778
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5360
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5934
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 14 match those from iteration 13
+Cycle length: 1
+First→Final Jaccard similarity: 0.0435
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 16
+
+NONE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.4200)
+  2. 'Alexander' (prob: 0.2112)
+  3. ' A' (prob: 0.1464)
+  4. ' Alexander' (prob: 0.1407)
+  5. ' C' (prob: 0.0817)
+
+SINGLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.3785)
+  2. ' A' (prob: 0.2511)
+  3. 'Alexander' (prob: 0.1855)
+  4. ' C' (prob: 0.0997)
+  5. ' Alexander' (prob: 0.0852)
+
+DOUBLE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.3469)
+  2. ' A' (prob: 0.2952)
+  3. 'Alexander' (prob: 0.1870)
+  4. ' C' (prob: 0.0997)
+  5. ' Alexander' (prob: 0.0711)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3036)
+  2. '/'' (prob: 0.2435)
+  3. 'rador' (prob: 0.2256)
+  4. ' and' (prob: 0.1163)
+  5. '' (prob: 0.1109)
+
+Convergence metrics:
+Iterations: 13
+Convergence type: cycle
+First→Final Jaccard: 0.0435
+Shared features: 16
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.103678
+None vs Double hook: 0.161208
+None vs Constant hook: 9.741137
+Single vs Double hook: 0.013513
+Single vs Constant hook: 9.261047
+Double vs Constant hook: 9.108505

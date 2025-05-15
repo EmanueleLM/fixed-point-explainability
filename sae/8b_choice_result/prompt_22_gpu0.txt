@@ -1,0 +1,118 @@
+
+============================================================
+PROMPT: What is the hardest natural substance on Earth? A=Diamond B=Quartz C=Granite D=Steel Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 26, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 26, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 175
+Reactivation ratio: 0.9115 (91.15%)
+Jaccard similarity: 0.8373 (83.73%)
+Output shape: torch.Size([1, 26, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6916
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5238
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6271
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 20 match those from iteration 19
+Cycle length: 1
+First→Final Jaccard similarity: 0.0323
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 12
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3625)
+  2. ' Diamond' (prob: 0.2753)
+  3. ' B' (prob: 0.1598)
+  4. ' D' (prob: 0.1211)
+  5. ' C' (prob: 0.0813)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3510)
+  2. ' Diamond' (prob: 0.2409)
+  3. ' B' (prob: 0.1870)
+  4. ' D' (prob: 0.1137)
+  5. ' C' (prob: 0.1073)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3736)
+  2. ' Diamond' (prob: 0.1982)
+  3. ' B' (prob: 0.1943)
+  4. ' D' (prob: 0.1206)
+  5. ' C' (prob: 0.1133)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8373
+Shared features: 175
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3873)
+  2. '/'' (prob: 0.2936)
+  3. 'rador' (prob: 0.1297)
+  4. ' and' (prob: 0.1060)
+  5. '' (prob: 0.0834)
+
+Convergence metrics:
+Iterations: 19
+Convergence type: cycle
+First→Final Jaccard: 0.0323
+Shared features: 12
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.103702
+None vs Double hook: 0.147494
+None vs Constant hook: 9.483044
+Single vs Double hook: 0.009704
+Single vs Constant hook: 9.559876
+Double vs Constant hook: 9.667755

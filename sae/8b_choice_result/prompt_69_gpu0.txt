@@ -1,0 +1,120 @@
+
+============================================================
+PROMPT: What does HTTP stand for in a web address? A=HyperText Transfer Protocol B=HighText Transfer Protocol C=Hyperlink Transfer Protocol D=HyperText Transmission Program Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 45, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 45, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 45, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 177
+Reactivation ratio: 0.9219 (92.19%)
+Jaccard similarity: 0.8551 (85.51%)
+Output shape: torch.Size([1, 45, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 45, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7534
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5610
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.5422
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 21 match those from iteration 20
+Cycle length: 1
+First→Final Jaccard similarity: 0.0186
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 7
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3246)
+  2. 'Hyper' (prob: 0.3208)
+  3. ' Hyper' (prob: 0.1287)
+  4. ' B' (prob: 0.1161)
+  5. ' C' (prob: 0.1097)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3777)
+  2. 'Hyper' (prob: 0.2133)
+  3. ' B' (prob: 0.1770)
+  4. ' C' (prob: 0.1445)
+  5. ' D' (prob: 0.0876)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3865)
+  2. ' B' (prob: 0.1994)
+  3. 'Hyper' (prob: 0.1691)
+  4. ' C' (prob: 0.1517)
+  5. ' D' (prob: 0.0932)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8551
+Shared features: 177
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4609)
+  2. '/'' (prob: 0.2594)
+  3. ' and' (prob: 0.1151)
+  4. 'rador' (prob: 0.0980)
+  5. '' (prob: 0.0667)
+
+Convergence metrics:
+Iterations: 20
+Convergence type: cycle
+First→Final Jaccard: 0.0186
+Shared features: 7
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.116420
+None vs Double hook: 0.172644
+None vs Constant hook: 9.032070
+Single vs Double hook: 0.011602
+Single vs Constant hook: 9.500119
+Double vs Constant hook: 9.570312

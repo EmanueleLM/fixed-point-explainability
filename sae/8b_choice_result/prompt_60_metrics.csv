@@ -1,0 +1,5 @@
+version,top_token,top_token_is_right,top_5_right,jaccard,kl_div
+base, Ottawa,False,True,NA,NA
+single, B,True,True,NA,0.21906548738479614
+double, B,True,True,0.8823529411764706,0.29600074887275696
+constant,️,False,False,0.029490616621983913,9.970742225646973

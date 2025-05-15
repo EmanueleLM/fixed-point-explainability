@@ -1,0 +1,114 @@
+
+============================================================
+PROMPT: When we consider consciousness, the key insight is that
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 11, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 11, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 184
+Reactivation ratio: 0.9583 (95.83%)
+Jaccard similarity: 0.9200 (92.00%)
+Output shape: torch.Size([1, 11, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9692
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.1963
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 63
+
+============================================================
+PROMPT: When we consider consciousness, the key insight is that
+============================================================
+
+NONE HOOK:
+Next token: ' it'
+Top 5 tokens:
+  1. ' it' (prob: 0.3099)
+  2. ' consciousness' (prob: 0.2847)
+  3. ' we' (prob: 0.1663)
+  4. ' the' (prob: 0.1318)
+  5. ' there' (prob: 0.1073)
+
+SINGLE HOOK:
+Next token: ' it'
+Top 5 tokens:
+  1. ' it' (prob: 0.2891)
+  2. ' consciousness' (prob: 0.2674)
+  3. ' we' (prob: 0.1931)
+  4. ' the' (prob: 0.1640)
+  5. ' there' (prob: 0.0864)
+
+DOUBLE HOOK:
+Next token: ' it'
+Top 5 tokens:
+  1. ' it' (prob: 0.2772)
+  2. ' consciousness' (prob: 0.2552)
+  3. ' we' (prob: 0.2044)
+  4. ' the' (prob: 0.1643)
+  5. ' there' (prob: 0.0988)
+
+CONSTANT HOOK:
+Next token: ' experience'
+Top 5 tokens:
+  1. ' experience' (prob: 0.8483)
+  2. 'experience' (prob: 0.0727)
+  3. ' reality' (prob: 0.0323)
+  4. ' experiences' (prob: 0.0270)
+  5. 'Reality' (prob: 0.0196)
+
+⚠️ None hook and Constant hook predict different tokens!
+
+⚠️ Single hook and Constant hook predict different tokens!
+
+⚠️ Double hook and Constant hook predict different tokens!
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.023304
+None vs Double hook: 0.031562
+None vs Constant hook: 12.670940
+Single vs Double hook: 0.004411
+Single vs Constant hook: 12.853199
+Double vs Constant hook: 12.814925

@@ -1,0 +1,142 @@
+
+============================================================
+PROMPT: What is something you cut paper with?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 9, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 9, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 179
+Reactivation ratio: 0.9323 (93.23%)
+Jaccard similarity: 0.8732 (87.32%)
+Output shape: torch.Size([1, 9, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 9, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 32 match those from iteration 31
+Cycle length: 1
+First→Final Jaccard similarity: 0.1098
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 38
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4415)
+  2. ' Sc' (prob: 0.2869)
+  3. ' If' (prob: 0.1043)
+  4. ' What' (prob: 0.0929)
+  5. ' The' (prob: 0.0745)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4937)
+  2. ' Sc' (prob: 0.1821)
+  3. ' What' (prob: 0.1264)
+  4. ' If' (prob: 0.1046)
+  5. ' I' (prob: 0.0932)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4446)
+  2. ' Sc' (prob: 0.1801)
+  3. ' What' (prob: 0.1610)
+  4. ' If' (prob: 0.1080)
+  5. ' I' (prob: 0.1062)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8732
+Shared features: 179
+
+CONSTANT HOOK:
+Next token: ' paper'
+Top 5 tokens:
+  1. ' paper' (prob: 0.7330)
+  2. ' Paper' (prob: 0.1918)
+  3. 'Paper' (prob: 0.0337)
+  4. '-paper' (prob: 0.0249)
+  5. '_paper' (prob: 0.0166)
+
+Convergence metrics:
+Iterations: 31
+Convergence type: cycle
+First→Final Jaccard: 0.1098
+Shared features: 38
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.080973
+None vs Double hook: 0.114072
+None vs Constant hook: 15.527060
+Single vs Double hook: 0.013238
+Single vs Constant hook: 15.084675
+Double vs Constant hook: 14.969009

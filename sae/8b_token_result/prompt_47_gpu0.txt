@@ -1,0 +1,160 @@
+
+============================================================
+PROMPT: What is the fourth planet from the Sun?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 10, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 10, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 10, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 178
+Reactivation ratio: 0.9271 (92.71%)
+Jaccard similarity: 0.8641 (86.41%)
+Output shape: torch.Size([1, 10, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 10, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.5868
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5673
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.7615
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 37, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 38, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 39, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 40, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 41 match those from iteration 40
+Cycle length: 1
+First→Final Jaccard similarity: 0.0000
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 0
+
+NONE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3270)
+  2. ' Mercury' (prob: 0.2439)
+  3. ' The' (prob: 0.1517)
+  4. ' Mars' (prob: 0.1475)
+  5. ' (' (prob: 0.1299)
+
+SINGLE HOOK:
+Next token: ' Mercury'
+Top 5 tokens:
+  1. ' Mercury' (prob: 0.3242)
+  2. ' What' (prob: 0.3216)
+  3. ' The' (prob: 0.1384)
+  4. ' How' (prob: 0.1186)
+  5. ' (' (prob: 0.0972)
+
+DOUBLE HOOK:
+Next token: ' What'
+Top 5 tokens:
+  1. ' What' (prob: 0.3657)
+  2. ' Mercury' (prob: 0.2658)
+  3. ' How' (prob: 0.1739)
+  4. ' The' (prob: 0.1062)
+  5. ' (' (prob: 0.0883)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8641
+Shared features: 178
+
+CONSTANT HOOK:
+Next token: ' necessarily'
+Top 5 tokens:
+  1. ' necessarily' (prob: 0.3307)
+  2. ' yet' (prob: 0.2796)
+  3. 'ori' (prob: 0.1730)
+  4. ' particularly' (prob: 0.1422)
+  5. 'ched' (prob: 0.0745)
+
+Convergence metrics:
+Iterations: 40
+Convergence type: cycle
+First→Final Jaccard: 0.0000
+Shared features: 0
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.088316
+None vs Double hook: 0.127353
+None vs Constant hook: 11.772931
+Single vs Double hook: 0.020050
+Single vs Constant hook: 12.022507
+Double vs Constant hook: 12.095398

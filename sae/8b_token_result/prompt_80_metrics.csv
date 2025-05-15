@@ -1,0 +1,5 @@
+version,top_token,top_token_is_right,top_5_right,jaccard,kl_div
+base, Fire,False,False,NA,NA
+single, Fire,False,False,NA,0.07968126982450485
+double, Fire,False,False,0.8731707317073171,0.12349526584148407
+constant, بوابة,False,False,0.0,8.876518249511719

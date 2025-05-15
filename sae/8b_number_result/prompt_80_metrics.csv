@@ -1,0 +1,5 @@
+version,top_token,top_token_is_right,top_5_right,jaccard,kl_div
+base,1,False,False,NA,NA
+single,1,False,False,NA,0.06329973042011261
+double,1,False,False,0.8916256157635468,0.07409943640232086
+constant,️,False,False,0.01856763925729443,8.277519226074219

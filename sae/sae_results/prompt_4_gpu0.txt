@@ -1,0 +1,184 @@
+
+============================================================
+PROMPT: To solve the hardest problems in AI, we need to
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 12, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 12, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 12, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 12, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 12, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7455
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 37, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 38, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 39, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 40, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 41, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 42, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 43, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 44, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 45, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 46, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 47, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 48, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 49, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 50, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 51, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 52, Jaccard similarity: 0.9692
+  Active features: 192
+Detected cycle! Indices at iteration 53 match those from iteration 52
+Cycle length: 1
+First→Final Jaccard similarity: 0.0378
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 14
+
+============================================================
+PROMPT: To solve the hardest problems in AI, we need to
+============================================================
+
+NONE HOOK:
+Next token: ' understand'
+Top 5 tokens:
+  1. ' understand' (prob: 0.3611)
+  2. ' build' (prob: 0.2569)
+  3. ' combine' (prob: 0.1372)
+  4. ' learn' (prob: 0.1306)
+  5. ' be' (prob: 0.1142)
+
+SINGLE HOOK:
+Next token: ' understand'
+Top 5 tokens:
+  1. ' understand' (prob: 0.3570)
+  2. ' build' (prob: 0.2445)
+  3. ' learn' (prob: 0.1537)
+  4. ' be' (prob: 0.1237)
+  5. ' develop' (prob: 0.1211)
+
+DOUBLE HOOK:
+Next token: ' understand'
+Top 5 tokens:
+  1. ' understand' (prob: 0.3185)
+  2. ' build' (prob: 0.2554)
+  3. ' learn' (prob: 0.1652)
+  4. ' develop' (prob: 0.1351)
+  5. ' create' (prob: 0.1258)
+
+CONSTANT HOOK:
+Next token: 'GPU'
+Top 5 tokens:
+  1. 'GPU' (prob: 0.3746)
+  2. ' gratuits' (prob: 0.3229)
+  3. 'DSL' (prob: 0.1298)
+  4. 'TimeString' (prob: 0.0917)
+  5. '́t' (prob: 0.0810)
+
+⚠️ None hook and Constant hook predict different tokens!
+
+⚠️ Single hook and Constant hook predict different tokens!
+
+⚠️ Double hook and Constant hook predict different tokens!
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.063674
+None vs Double hook: 0.090828
+None vs Constant hook: 10.816954
+Single vs Double hook: 0.009226
+Single vs Constant hook: 10.783065
+Double vs Constant hook: 10.817840

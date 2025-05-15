@@ -1,0 +1,118 @@
+
+============================================================
+PROMPT: Which metal is liquid at room temperature? A=Mercury B=Copper C=Aluminum D=Nickel Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 26, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 26, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 180
+Reactivation ratio: 0.9375 (93.75%)
+Jaccard similarity: 0.8824 (88.24%)
+Output shape: torch.Size([1, 26, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 26, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6842
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.5360
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.6410
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 20 match those from iteration 19
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3507)
+  2. 'Mer' (prob: 0.2812)
+  3. ' B' (prob: 0.1827)
+  4. ' Mercury' (prob: 0.1213)
+  5. ' C' (prob: 0.0641)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4316)
+  2. ' B' (prob: 0.1962)
+  3. 'Mer' (prob: 0.1863)
+  4. ' Mercury' (prob: 0.0966)
+  5. ' C' (prob: 0.0893)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4626)
+  2. ' B' (prob: 0.2125)
+  3. 'Mer' (prob: 0.1514)
+  4. ' C' (prob: 0.1001)
+  5. ' Mercury' (prob: 0.0735)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8824
+Shared features: 180
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4412)
+  2. '/'' (prob: 0.2723)
+  3. 'rador' (prob: 0.1074)
+  4. ' and' (prob: 0.1059)
+  5. '' (prob: 0.0732)
+
+Convergence metrics:
+Iterations: 19
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.071020
+None vs Double hook: 0.118964
+None vs Constant hook: 9.348599
+Single vs Double hook: 0.014002
+Single vs Constant hook: 8.984837
+Double vs Constant hook: 8.926776

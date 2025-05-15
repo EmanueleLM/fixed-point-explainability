@@ -1,0 +1,114 @@
+
+============================================================
+PROMPT: Who was the first person to walk on the Moon? A=Buzz Aldrin B=Neil Armstrong C=Yuri Gagarin D=Michael Collins Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 40, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 40, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 40, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 178
+Reactivation ratio: 0.9271 (92.71%)
+Jaccard similarity: 0.8641 (86.41%)
+Output shape: torch.Size([1, 40, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 40, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6842
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.4826
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6410
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 18 match those from iteration 17
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: ' B'
+Top 5 tokens:
+  1. ' B' (prob: 0.3647)
+  2. ' A' (prob: 0.3369)
+  3. 'Neil' (prob: 0.1523)
+  4. ' Neil' (prob: 0.0873)
+  5. ' ' (prob: 0.0587)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3864)
+  2. ' B' (prob: 0.3289)
+  3. 'Neil' (prob: 0.1402)
+  4. ' Neil' (prob: 0.0927)
+  5. ' ' (prob: 0.0518)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4007)
+  2. ' B' (prob: 0.3230)
+  3. 'Neil' (prob: 0.1407)
+  4. ' Neil' (prob: 0.0756)
+  5. ' ' (prob: 0.0600)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8641
+Shared features: 178
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.3562)
+  2. '/'' (prob: 0.3058)
+  3. 'rador' (prob: 0.1333)
+  4. ' and' (prob: 0.1101)
+  5. '' (prob: 0.0946)
+
+Convergence metrics:
+Iterations: 17
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.048448
+None vs Double hook: 0.074667
+None vs Constant hook: 8.751940
+Single vs Double hook: 0.013076
+Single vs Constant hook: 8.736743
+Double vs Constant hook: 8.751967

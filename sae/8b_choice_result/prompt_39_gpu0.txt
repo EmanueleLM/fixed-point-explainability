@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: What part of a plant conducts photosynthesis? A=Roots B=Stems C=Leaves D=Flowers Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 28, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 28, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 182
+Reactivation ratio: 0.9479 (94.79%)
+Jaccard similarity: 0.9010 (90.10%)
+Output shape: torch.Size([1, 28, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 28, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6552
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5299
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6410
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0295
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 11
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5120)
+  2. ' B' (prob: 0.1780)
+  3. ' A' (prob: 0.1337)
+  4. 'Le' (prob: 0.0995)
+  5. ' D' (prob: 0.0768)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4497)
+  2. ' A' (prob: 0.2443)
+  3. ' B' (prob: 0.1621)
+  4. ' D' (prob: 0.1054)
+  5. 'St' (prob: 0.0386)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4144)
+  2. ' A' (prob: 0.2658)
+  3. ' B' (prob: 0.1729)
+  4. ' D' (prob: 0.1099)
+  5. ' ' (prob: 0.0370)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9010
+Shared features: 182
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4206)
+  2. '/'' (prob: 0.2625)
+  3. 'rador' (prob: 0.1321)
+  4. '' (prob: 0.0937)
+  5. ' and' (prob: 0.0911)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0295
+Shared features: 11
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.120864
+None vs Double hook: 0.205213
+None vs Constant hook: 10.026283
+Single vs Double hook: 0.014151
+Single vs Constant hook: 9.998224
+Double vs Constant hook: 9.966313

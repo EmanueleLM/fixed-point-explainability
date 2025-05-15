@@ -1,0 +1,146 @@
+
+============================================================
+PROMPT: What is a soft white cloud-like thing in the sky?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 13, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 13, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 13, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 186
+Reactivation ratio: 0.9688 (96.88%)
+Jaccard similarity: 0.9394 (93.94%)
+Output shape: torch.Size([1, 13, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 13, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.6134
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.6000
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.7376
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.6916
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.6340
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.6696
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.7860
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 34 match those from iteration 33
+Cycle length: 1
+First→Final Jaccard similarity: 0.0000
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 0
+
+NONE HOOK:
+Next token: ' It'
+Top 5 tokens:
+  1. ' It' (prob: 0.3260)
+  2. ' What' (prob: 0.2305)
+  3. ' A' (prob: 0.2167)
+  4. ' Is' (prob: 0.1187)
+  5. ' The' (prob: 0.1080)
+
+SINGLE HOOK:
+Next token: ' It'
+Top 5 tokens:
+  1. ' It' (prob: 0.3864)
+  2. ' What' (prob: 0.2412)
+  3. ' A' (prob: 0.1696)
+  4. ' The' (prob: 0.1241)
+  5. ' Is' (prob: 0.0787)
+
+DOUBLE HOOK:
+Next token: ' It'
+Top 5 tokens:
+  1. ' It' (prob: 0.3514)
+  2. ' What' (prob: 0.2578)
+  3. ' A' (prob: 0.1773)
+  4. ' The' (prob: 0.1311)
+  5. ' (' (prob: 0.0824)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9394
+Shared features: 186
+
+CONSTANT HOOK:
+Next token: ' بوابة'
+Top 5 tokens:
+  1. ' بوابة' (prob: 0.7067)
+  2. 'most' (prob: 0.1220)
+  3. 'edException' (prob: 0.0670)
+  4. 'room' (prob: 0.0649)
+  5. 'ward' (prob: 0.0395)
+
+Convergence metrics:
+Iterations: 33
+Convergence type: cycle
+First→Final Jaccard: 0.0000
+Shared features: 0
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.058699
+None vs Double hook: 0.076218
+None vs Constant hook: 9.182982
+Single vs Double hook: 0.008801
+Single vs Constant hook: 9.154484
+Double vs Constant hook: 9.052141

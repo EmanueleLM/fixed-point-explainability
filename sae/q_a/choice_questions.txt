@@ -1,0 +1,100 @@
+Which planet is closest to the sun? A=Mercury B=Venus C=Earth D=Mars Answer=
+What color is a banana? A=Yellow B=Red C=Green D=Blue Answer=
+How many legs does a spider have? A=6 B=8 C=10 D=12 Answer=
+What color is grass? A=Orange B=Green C=Brown D=Blue Answer=
+What is the capital of Spain? A=Seville B=Barcelona C=Madrid D=Valencia Answer=
+What color is an apple? A=Red B=Blue C=Yellow D=Green Answer=
+How many legs does a human have? A=1 B=2 C=3 D=4 Answer=
+How many legs does a dog have? A=4 B=3 C=5 D=2 Answer=
+What is the capital of Germany? A=Hamburg B=Berlin C=Munich D=Frankfurt Answer=
+What is the capital of France? A=Berlin B=Madrid C=Paris D=Rome Answer=
+What is the capital of Italy? A=Rome B=Venice C=Naples D=Florence Answer=
+How many legs does a bird have? A=1 B=2 C=3 D=4 Answer=
+What color is the sky on a clear day? A=Blue B=Red C=White D=Gray Answer=
+Which continent is known as the "Dark Continent"? A=Asia B=South America C=Africa D=Europe Answer=
+What gas do plants primarily absorb from the atmosphere? A=Oxygen B=Carbon dioxide C=Nitrogen D=Hydrogen Answer=
+Which ocean is the largest? A=Atlantic B=Indian C=Arctic D=Pacific Answer=
+Which country gifted the Statue of Liberty to the United States? A=France B=United Kingdom C=Spain D=Italy Answer=
+Who wrote "Romeo and Juliet"? A=William Shakespeare B=Charles Dickens C=Leo Tolstoy D=Mark Twain Answer=
+What is the boiling point of water at sea level in °C? A=90 B=95 C=100 D=105 Answer=
+Which animal is known as the "King of the Jungle"? A=Tiger B=Elephant C=Lion D=Bear Answer=
+What is the chemical symbol for gold? A=Gd B=Ag C=Au D=Go Answer=
+Which instrument has keys, pedals, and strings? A=Guitar B=Piano C=Violin D=Flute Answer=
+What is the hardest natural substance on Earth? A=Diamond B=Quartz C=Granite D=Steel Answer=
+Which planet is known for its rings? A=Jupiter B=Saturn C=Uranus D=Neptune Answer=
+Which language has the most native speakers worldwide? A=Spanish B=English C=Mandarin Chinese D=Hindi Answer=
+What is the largest mammal? A=African Elephant B=Blue Whale C=Giraffe D=Hippopotamus Answer=
+Which famous scientist developed the theory of relativity? A=Isaac Newton B=Nikola Tesla C=Albert Einstein D=Galileo Galilei Answer=
+In which continent is the Amazon Rainforest primarily located? A=Africa B=Asia C=South America D=Australia Answer=
+What is the smallest prime number? A=0 B=1 C=2 D=3 Answer=
+Which gas makes up most of Earth’s atmosphere? A=Oxygen B=Carbon dioxide C=Nitrogen D=Hydrogen Answer=
+Who painted the "Mona Lisa"? A=Vincent van Gogh B=Leonardo da Vinci C=Pablo Picasso D=Claude Monet Answer=
+What is the largest desert in the world? A=Sahara B=Arabian C=Gobi D=Antarctic Desert Answer=
+Which country is known as the Land of the Rising Sun? A=China B=South Korea C=Japan D=Thailand Answer=
+What is H₂O commonly known as? A=Gold B=Hydrogen peroxide C=Water D=Salt Answer=
+Which organ pumps blood through the human body? A=Lungs B=Heart C=Kidneys D=Liver Answer=
+What is the tallest mountain above sea level? A=Mount Everest B=K2 C=Kangchenjunga D=Lhotse Answer=
+Which planet is known as the Red Planet? A=Mars B=Mercury C=Venus D=Jupiter Answer=
+Who was the first person to walk on the Moon? A=Buzz Aldrin B=Neil Armstrong C=Yuri Gagarin D=Michael Collins Answer=
+What currency is used in Japan? A=Yuan B=Yen C=Won D=Dollar Answer=
+What part of a plant conducts photosynthesis? A=Roots B=Stems C=Leaves D=Flowers Answer=
+How many continents are there on Earth? A=5 B=6 C=7 D=8 Answer=
+What is the primary language spoken in Brazil? A=Spanish B=Portuguese C=French D=English Answer=
+Which metal is liquid at room temperature? A=Mercury B=Copper C=Aluminum D=Nickel Answer=
+What is the longest river in the world? A=Amazon B=Nile C=Yangtze D=Mississippi Answer=
+Which city is known as the "Big Apple"? A=Los Angeles B=Chicago C=New York City D=Boston Answer=
+What is the main ingredient in guacamole? A=Tomato B=Cucumber C=Avocado D=Onion Answer=
+Which month gains an extra day in a leap year? A=January B=February C=March D=April Answer=
+What is the largest planet in our solar system? A=Saturn B=Jupiter C=Uranus D=Neptune Answer=
+Which animal is the symbol of the World Wildlife Fund? A=Tiger B=Elephant C=Panda D=Koala Answer=
+What is the process by which plants make their food? A=Respiration B=Photosynthesis C=Transpiration D=Germination Answer=
+In computing, what does CPU stand for? A=Central Process Unit B=Computer Personal Unit C=Central Processing Unit D=Central Performance Unit Answer=
+Which blood type is known as the universal donor? A=O negative B=A positive C=AB positive D=B negative Answer=
+What is the most abundant element in the universe? A=Helium B=Hydrogen C=Oxygen D=Carbon Answer=
+Which country hosted the 2016 Summer Olympics? A=China B=Brazil C=United Kingdom D=Russia Answer=
+What is the freezing point of water in °C? A=0 B=32 C=100 D=–10 Answer=
+What is the national flower of Japan? A=Rose B=Cherry Blossom C=Lotus D=Tulip Answer=
+Which planet has the most moons? A=Earth B=Mars C=Jupiter D=Saturn Answer=
+Who discovered penicillin? A=Alexander Fleming B=Marie Curie C=Louis Pasteur D=Gregor Mendel Answer=
+What year did World War II end? A=1943 B=1944 C=1945 D=1946 Answer=
+Which vitamin is produced when skin is exposed to sunlight? A=Vitamin A B=Vitamin B12 C=Vitamin C D=Vitamin D Answer=
+What is the capital of Canada? A=Toronto B=Ottawa C=Vancouver D=Montreal Answer=
+Which country is home to the kangaroo? A=India B=South Africa C=Australia D=Brazil Answer=
+Which of these elements is often used in fertilizers? A=Oxygen B=Hydrogen C=Nitrogen D=Carbon dioxide Answer=
+What is the capital city of Egypt? A=Cairo B=Alexandria C=Giza D=Luxor Answer=
+Which physicist wrote "A Brief History of Time"? A=Stephen Hawking B=Carl Sagan C=Richard Feynman D=Neil deGrasse Tyson Answer=
+What natural resource is often called "black gold"? A=Coal B=Oil C=Natural Gas D=Diamond Answer=
+Which continent has the most countries? A=Europe B=Africa C=Asia D=South America Answer=
+What is the name of the oceanic division encircling Antarctica? A=Pacific Ocean B=Southern Ocean C=Atlantic Ocean D=Indian Ocean Answer=
+Which planet in our solar system takes the longest to orbit the Sun? A=Uranus B=Neptune C=Jupiter D=Saturn Answer=
+What does HTTP stand for in a web address? A=HyperText Transfer Protocol B=HighText Transfer Protocol C=Hyperlink Transfer Protocol D=HyperText Transmission Program Answer=
+What is the capital of Australia? A=Sydney B=Canberra C=Melbourne D=Perth Answer=
+Which element has atomic number 6? A=Carbon B=Nitrogen C=Oxygen D=Helium Answer=
+Who painted "Starry Night"? A=Pablo Picasso B=Vincent van Gogh C=Leonardo da Vinci D=Claude Monet Answer=
+Which country is credited with creating sushi? A=China B=Japan C=South Korea D=Thailand Answer=
+What is the longest bone in the human body? A=Femur B=Tibia C=Humerus D=Fibula Answer=
+Which continent is considered the driest on Earth? A=Antarctica B=Africa C=Australia D=South America Answer=
+Who wrote the novel "1984"? A=George Orwell B=Aldous Huxley C=Ernest Hemingway D=J.K. Rowling Answer=
+Which organelle is known as the powerhouse of the cell? A=Nucleus B=Mitochondrion C=Ribosome D=Golgi apparatus Answer=
+What language is primarily spoken in Austria? A=German B=French C=Italian D=Dutch Answer=
+What is the chemical formula for table salt? A=H₂O B=NaCl C=CO₂ D=KCl Answer=
+Which planet features the Great Red Spot? A=Jupiter B=Mars C=Venus D=Saturn Answer=
+Which city hosted the first modern Olympic Games in 1896? A=Paris B=Athens C=London D=Rome Answer=
+Who developed the first successful smallpox vaccine? A=Edward Jenner B=Jonas Salk C=Louis Pasteur D=Robert Koch Answer=
+What is the smallest country in the world by land area? A=Monaco B=Nauru C=Vatican City D=San Marino Answer=
+In which sport might you perform a slam dunk? A=Basketball B=Volleyball C=Tennis D=Baseball Answer=
+Which gas is commonly used to fill party balloons for buoyancy? A=Nitrogen B=Helium C=Oxygen D=Hydrogen Answer=
+What is the largest internal organ in the human body? A=Liver B=Brain C=Lung D=Heart Answer=
+Which sea separates Europe from Africa? A=Mediterranean Sea B=Baltic Sea C=Black Sea D=Red Sea Answer=
+Who is often called the "Father of Computers"? A=Charles Babbage B=Alan Turing C=Bill Gates D=Steve Jobs Answer=
+What is the currency of the United Kingdom? A=Euro B=Pound Sterling C=Dollar D=Yen Answer=
+Which planet in our solar system is tilted on its side, leading to extreme seasons? A=Uranus B=Neptune C=Saturn D=Jupiter Answer=
+What is currently the tallest building in the world (2025)? A=Shanghai Tower B=Burj Khalifa C=Merdeka 118 D=Lotte World Tower Answer=
+Animals that eat both plants and meat are called what? A=Herbivores B=Carnivores C=Omnivores D=Insectivores Answer=
+Which German city is famous for its annual Oktoberfest celebration? A=Berlin B=Munich C=Hamburg D=Frankfurt Answer=
+What is the scientific study of weather called? A=Geology B=Meteorology C=Astronomy D=Oceanography Answer=
+Which river flows through the city of Paris? A=Rhine B=Thames C=Seine D=Danube Answer=
+Who is credited with inventing the telephone? A=Thomas Edison B=Alexander Graham Bell C=Nikola Tesla D=Guglielmo Marconi Answer=
+What is the largest species of shark? A=Great White Shark B=Hammerhead Shark C=Whale Shark D=Tiger Shark Answer=
+Which process converts sugars into alcohol using yeast? A=Photosynthesis B=Fermentation C=Distillation D=Respiration Answer=
+In which country can you visit the ancient Incan citadel of Machu Picchu? A=Peru B=Mexico C=Chile D=Guatemala

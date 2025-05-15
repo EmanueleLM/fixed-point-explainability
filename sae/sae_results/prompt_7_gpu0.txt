@@ -1,0 +1,173 @@
+
+============================================================
+PROMPT: If I had to explain quantum mechanics in one sentence
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 11, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 11, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 184
+Reactivation ratio: 0.9583 (95.83%)
+Jaccard similarity: 0.9200 (92.00%)
+Output shape: torch.Size([1, 11, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 11, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.7220
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.6134
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.7696
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.7696
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.8028
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 37, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 38, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 39, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 40, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 41, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 42, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 43, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 44, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 45, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 46 match those from iteration 45
+Cycle length: 1
+First→Final Jaccard similarity: 0.0000
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 0
+
+============================================================
+PROMPT: If I had to explain quantum mechanics in one sentence
+============================================================
+
+NONE HOOK:
+Next token: ','
+Top 5 tokens:
+  1. ',' (prob: 0.7777)
+  2. ' I' (prob: 0.1050)
+  3. ' it' (prob: 0.0685)
+  4. ' to' (prob: 0.0299)
+  5. '
+' (prob: 0.0189)
+
+SINGLE HOOK:
+Next token: ','
+Top 5 tokens:
+  1. ',' (prob: 0.8080)
+  2. ' I' (prob: 0.0905)
+  3. ' it' (prob: 0.0530)
+  4. ' to' (prob: 0.0269)
+  5. '
+' (prob: 0.0217)
+
+DOUBLE HOOK:
+Next token: ','
+Top 5 tokens:
+  1. ',' (prob: 0.8101)
+  2. ' I' (prob: 0.0873)
+  3. ' it' (prob: 0.0541)
+  4. ' to' (prob: 0.0247)
+  5. '
+' (prob: 0.0238)
+
+CONSTANT HOOK:
+Next token: '!'
+Top 5 tokens:
+  1. '!' (prob: 0.2000)
+  2. '"' (prob: 0.2000)
+  3. '#' (prob: 0.2000)
+  4. '$' (prob: 0.2000)
+  5. '%' (prob: 0.2000)
+
+⚠️ None hook and Constant hook predict different tokens!
+
+⚠️ Single hook and Constant hook predict different tokens!
+
+⚠️ Double hook and Constant hook predict different tokens!
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.009465
+None vs Double hook: 0.013567
+None vs Constant hook: 10.377273
+Single vs Double hook: 0.001018
+Single vs Constant hook: 10.351209
+Double vs Constant hook: 10.315384

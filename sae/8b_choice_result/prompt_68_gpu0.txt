@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: Which planet in our solar system takes the longest to orbit the Sun? A=Uranus B=Neptune C=Jupiter D=Saturn Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 34, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 34, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 34, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 178
+Reactivation ratio: 0.9271 (92.71%)
+Jaccard similarity: 0.8641 (86.41%)
+Output shape: torch.Size([1, 34, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 34, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6481
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.4826
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6769
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9394
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0323
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 12
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.2279)
+  2. ' C' (prob: 0.2141)
+  3. ' D' (prob: 0.1913)
+  4. ' B' (prob: 0.1881)
+  5. ' Saturn' (prob: 0.1787)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3111)
+  2. ' C' (prob: 0.2126)
+  3. ' B' (prob: 0.2025)
+  4. ' D' (prob: 0.1790)
+  5. ' Saturn' (prob: 0.0948)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.3293)
+  2. ' C' (prob: 0.2074)
+  3. ' B' (prob: 0.2041)
+  4. ' D' (prob: 0.1744)
+  5. ' Saturn' (prob: 0.0848)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8641
+Shared features: 178
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4538)
+  2. '/'' (prob: 0.2431)
+  3. 'rador' (prob: 0.1273)
+  4. ' and' (prob: 0.0887)
+  5. '' (prob: 0.0871)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0323
+Shared features: 12
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.098802
+None vs Double hook: 0.141362
+None vs Constant hook: 9.868370
+Single vs Double hook: 0.009186
+Single vs Constant hook: 9.976105
+Double vs Constant hook: 10.137130

@@ -7,3 +7,6 @@ scikit-learn
 tensorflow
 torch
 torchvision
+transformer_lens
+datasets
+tqdm

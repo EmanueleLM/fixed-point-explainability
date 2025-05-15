@@ -1,0 +1,5 @@
+version,top_token,top_token_is_right,top_5_right,jaccard,kl_div
+base, Jupiter,False,True,NA,NA
+single, C,False,True,NA,0.13128918409347534
+double, C,False,True,0.8640776699029126,0.22205613553524017
+constant,️,False,False,0.03783783783783784,9.857988357543945

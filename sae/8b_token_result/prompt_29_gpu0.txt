@@ -1,0 +1,164 @@
+
+============================================================
+PROMPT: What do you call water droplets falling from the sky?
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 13, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 13, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 13, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 183
+Reactivation ratio: 0.9531 (95.31%)
+Jaccard similarity: 0.9104 (91.04%)
+Output shape: torch.Size([1, 13, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 13, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8373
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.7944
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.7534
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.7220
+  Active features: 192
+Iteration 23, Jaccard similarity: 0.6552
+  Active features: 192
+Iteration 24, Jaccard similarity: 0.5547
+  Active features: 192
+Iteration 25, Jaccard similarity: 0.6842
+  Active features: 192
+Iteration 26, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 27, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 28, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 29, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 30, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 31, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 32, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 33, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 34, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 35, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 36, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 37, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 38, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 39, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 40, Jaccard similarity: 0.9692
+  Active features: 192
+Iteration 41, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 42, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 43 match those from iteration 42
+Cycle length: 1
+First→Final Jaccard similarity: 0.0000
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 0
+
+NONE HOOK:
+Next token: ' Rain'
+Top 5 tokens:
+  1. ' Rain' (prob: 0.5996)
+  2. ' If' (prob: 0.1367)
+  3. ' What' (prob: 0.0919)
+  4. ' A' (prob: 0.0915)
+  5. ' Snow' (prob: 0.0802)
+
+SINGLE HOOK:
+Next token: ' Rain'
+Top 5 tokens:
+  1. ' Rain' (prob: 0.6843)
+  2. ' If' (prob: 0.1109)
+  3. ' The' (prob: 0.0765)
+  4. ' What' (prob: 0.0737)
+  5. ' R' (prob: 0.0546)
+
+DOUBLE HOOK:
+Next token: ' Rain'
+Top 5 tokens:
+  1. ' Rain' (prob: 0.6984)
+  2. ' If' (prob: 0.1004)
+  3. ' The' (prob: 0.0746)
+  4. ' What' (prob: 0.0706)
+  5. ' Answer' (prob: 0.0559)
+
+Feature overlap metrics:
+Jaccard similarity: 0.9104
+Shared features: 183
+
+CONSTANT HOOK:
+Next token: 'iating'
+Top 5 tokens:
+  1. 'iating' (prob: 0.5019)
+  2. 'led' (prob: 0.2550)
+  3. ' latter' (prob: 0.0976)
+  4. 'carousel' (prob: 0.0789)
+  5. '/ex' (prob: 0.0666)
+
+Convergence metrics:
+Iterations: 42
+Convergence type: cycle
+First→Final Jaccard: 0.0000
+Shared features: 0
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.126824
+None vs Double hook: 0.165352
+None vs Constant hook: 8.990844
+Single vs Double hook: 0.009703
+Single vs Constant hook: 9.208889
+Double vs Constant hook: 9.305803

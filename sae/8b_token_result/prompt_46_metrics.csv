@@ -1,0 +1,5 @@
+version,top_token,top_token_is_right,top_5_right,jaccard,kl_div
+base, Milk,True,True,NA,NA
+single, Milk,True,True,NA,0.055262744426727295
+double, Milk,True,True,0.8823529411764706,0.06683580577373505
+constant,!,False,False,0.0026109660574412533,7.00672721862793

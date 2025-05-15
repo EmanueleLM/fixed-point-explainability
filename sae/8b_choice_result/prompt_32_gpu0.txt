@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: Which country is known as the Land of the Rising Sun? A=China B=South Korea C=Japan D=Thailand Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 31, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 31, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 31, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 178
+Reactivation ratio: 0.9271 (92.71%)
+Jaccard similarity: 0.8641 (86.41%)
+Output shape: torch.Size([1, 31, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 31, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8641
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8551
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.7067
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.4942
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6481
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8462
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0267
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 10
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5904)
+  2. 'Japan' (prob: 0.2082)
+  3. ' Japan' (prob: 0.0912)
+  4. ' B' (prob: 0.0654)
+  5. ' A' (prob: 0.0448)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5488)
+  2. 'Japan' (prob: 0.1609)
+  3. ' A' (prob: 0.1509)
+  4. ' B' (prob: 0.0786)
+  5. ' Japan' (prob: 0.0609)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5276)
+  2. ' A' (prob: 0.1721)
+  3. 'Japan' (prob: 0.1542)
+  4. ' B' (prob: 0.0939)
+  5. ' Japan' (prob: 0.0521)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8641
+Shared features: 178
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4085)
+  2. '/'' (prob: 0.2782)
+  3. 'rador' (prob: 0.1327)
+  4. '' (prob: 0.0987)
+  5. ' and' (prob: 0.0820)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0267
+Shared features: 10
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.092799
+None vs Double hook: 0.123653
+None vs Constant hook: 10.156992
+Single vs Double hook: 0.007005
+Single vs Constant hook: 9.797298
+Double vs Constant hook: 9.635775

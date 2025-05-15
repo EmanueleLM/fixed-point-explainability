@@ -1,0 +1,11 @@
+This is the output of quantify_convergence.py
+
+SUMMARY OF ITERATIONS < 99:
+8b_choice_result: 100 out of 100 files (100.00%)
+8b_number_result: 101 out of 101 files (100.00%)
+8b_token_result: 102 out of 102 files (100.00%)
+
+STATISTICS:
+8b_choice_result: Mean = 17.41, Standard Deviation = 3.57
+8b_number_result: Mean = 29.30, Standard Deviation = 12.29
+8b_token_result: Mean = 30.75, Standard Deviation = 12.73

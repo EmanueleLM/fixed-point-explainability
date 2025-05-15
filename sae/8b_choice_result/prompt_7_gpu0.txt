@@ -1,0 +1,124 @@
+
+============================================================
+PROMPT: How many legs does a dog have? A=4 B=3 C=5 D=2 Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 23, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 23, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 23, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 181
+Reactivation ratio: 0.9427 (94.27%)
+Jaccard similarity: 0.8916 (89.16%)
+Output shape: torch.Size([1, 23, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 23, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.8199
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.6203
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.4884
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.7220
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.8916
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9010
+  Active features: 192
+Iteration 17, Jaccard similarity: 0.9592
+  Active features: 192
+Iteration 18, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 19, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 20, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 21, Jaccard similarity: 0.9896
+  Active features: 192
+Iteration 22, Jaccard similarity: 0.9896
+  Active features: 192
+Detected cycle! Indices at iteration 23 match those from iteration 22
+Cycle length: 1
+First→Final Jaccard similarity: 0.0240
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 9
+
+NONE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4319)
+  2. ' D' (prob: 0.1674)
+  3. '4' (prob: 0.1369)
+  4. ' B' (prob: 0.1356)
+  5. ' ' (prob: 0.1282)
+
+SINGLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4553)
+  2. ' D' (prob: 0.1802)
+  3. ' B' (prob: 0.1526)
+  4. ' C' (prob: 0.1094)
+  5. '4' (prob: 0.1025)
+
+DOUBLE HOOK:
+Next token: ' A'
+Top 5 tokens:
+  1. ' A' (prob: 0.4579)
+  2. ' D' (prob: 0.1821)
+  3. ' B' (prob: 0.1577)
+  4. ' C' (prob: 0.1139)
+  5. '4' (prob: 0.0885)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8916
+Shared features: 181
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4550)
+  2. '/'' (prob: 0.2590)
+  3. ' and' (prob: 0.1283)
+  4. 'rador' (prob: 0.0948)
+  5. '' (prob: 0.0629)
+
+Convergence metrics:
+Iterations: 22
+Convergence type: cycle
+First→Final Jaccard: 0.0240
+Shared features: 9
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.039455
+None vs Double hook: 0.063021
+None vs Constant hook: 9.561804
+Single vs Double hook: 0.005165
+Single vs Constant hook: 9.802954
+Double vs Constant hook: 9.968879

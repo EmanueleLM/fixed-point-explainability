@@ -1,0 +1,30 @@
+SUMMARY STATISTICS
+=================
+
+Total prompts processed: 1
+Total processing time: 5.9 seconds
+
+Top-1 Accuracy (% correct predictions)
+---------------------------------
+base    :   0.00%
+single  :   0.00%
+double  :   0.00%
+constant:   0.00%
+
+Top-5 Accuracy (% correct in top 5)
+---------------------------------
+base    :   0.00%
+single  :   0.00%
+double  :   0.00%
+constant:   0.00%
+
+Average Jaccard Similarity
+-------------------------
+double  : 0.8028
+constant: 0.0159
+
+Average KL Divergence
+--------------------
+single  : 0.0794
+double  : 0.1676
+constant: 20.7545

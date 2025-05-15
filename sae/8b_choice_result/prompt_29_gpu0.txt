@@ -1,0 +1,112 @@
+
+============================================================
+PROMPT: Which gas makes up most of Earth’s atmosphere? A=Oxygen B=Carbon dioxide C=Nitrogen D=Hydrogen Answer=
+============================================================
+Processing with single SAE hook...
+Input shape: torch.Size([1, 32, 4096])
+Last token activated features: torch.Size([1, 192])
+Output shape: torch.Size([1, 32, 4096])
+Processing with double SAE hook (2-hook)...
+Input shape: torch.Size([1, 32, 4096])
+
+Last token feature statistics:
+Features in first pass: 192
+Features in second pass: 192
+Shared features: 180
+Reactivation ratio: 0.9375 (93.75%)
+Jaccard similarity: 0.8824 (88.24%)
+Output shape: torch.Size([1, 32, 4096])
+Processing with constant SAE hook (converging features)...
+Input shape: torch.Size([1, 32, 4096])
+
+Last token position: Starting convergence loop
+Iteration 1, Active features: 192
+Iteration 2, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 3, Jaccard similarity: 0.8286
+  Active features: 192
+Iteration 4, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 5, Jaccard similarity: 0.8113
+  Active features: 192
+Iteration 6, Jaccard similarity: 0.6340
+  Active features: 192
+Iteration 7, Jaccard similarity: 0.5178
+  Active features: 192
+Iteration 8, Jaccard similarity: 0.6696
+  Active features: 192
+Iteration 9, Jaccard similarity: 0.8824
+  Active features: 192
+Iteration 10, Jaccard similarity: 0.9200
+  Active features: 192
+Iteration 11, Jaccard similarity: 0.8732
+  Active features: 192
+Iteration 12, Jaccard similarity: 0.9296
+  Active features: 192
+Iteration 13, Jaccard similarity: 0.9104
+  Active features: 192
+Iteration 14, Jaccard similarity: 0.9492
+  Active features: 192
+Iteration 15, Jaccard similarity: 0.9794
+  Active features: 192
+Iteration 16, Jaccard similarity: 0.9794
+  Active features: 192
+Detected cycle! Indices at iteration 17 match those from iteration 16
+Cycle length: 1
+First→Final Jaccard similarity: 0.0240
+First iteration: 192 features, Final iteration: 192 features
+Shared features between first and final: 9
+
+NONE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.5973)
+  2. ' B' (prob: 0.2217)
+  3. ' A' (prob: 0.0876)
+  4. ' Nit' (prob: 0.0514)
+  5. ' D' (prob: 0.0421)
+
+SINGLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4781)
+  2. ' B' (prob: 0.2202)
+  3. ' A' (prob: 0.2045)
+  4. ' D' (prob: 0.0501)
+  5. 'O' (prob: 0.0471)
+
+DOUBLE HOOK:
+Next token: ' C'
+Top 5 tokens:
+  1. ' C' (prob: 0.4375)
+  2. ' A' (prob: 0.2557)
+  3. ' B' (prob: 0.2090)
+  4. ' D' (prob: 0.0581)
+  5. 'O' (prob: 0.0397)
+
+Feature overlap metrics:
+Jaccard similarity: 0.8824
+Shared features: 180
+
+CONSTANT HOOK:
+Next token: '️'
+Top 5 tokens:
+  1. '️' (prob: 0.4204)
+  2. '/'' (prob: 0.2627)
+  3. 'rador' (prob: 0.1321)
+  4. '' (prob: 0.0934)
+  5. ' and' (prob: 0.0914)
+
+Convergence metrics:
+Iterations: 16
+Convergence type: cycle
+First→Final Jaccard: 0.0240
+Shared features: 9
+
+DISTRIBUTION DIFFERENCES (KL DIVERGENCE):
+None vs Single hook: 0.084647
+None vs Double hook: 0.140004
+None vs Constant hook: 11.027920
+Single vs Double hook: 0.017367
+Single vs Constant hook: 10.608306
+Double vs Constant hook: 10.355965
