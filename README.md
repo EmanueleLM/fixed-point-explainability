@@ -15,13 +15,13 @@ There are 3 folders. We provide instructions for each of them.
 
 #### Feature Based Explanations
 
-<a href="feature-based/">Check this README for instructions</a>
+<a href="feature-based/README.md">Check this README for instructions</a>
 
 
 #### Prototype Based Explanations
 
-<a href="prototype-based/">Check this README for instructions</a>
+<a href="prototype-based/README.md">Check this README for instructions</a>
 
 #### SAE Explanations
 
-<a href="sae/">Check this README for instructions</a>
+<a href="sae/README.md">Check this README for instructions</a>
