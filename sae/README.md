@@ -9,7 +9,7 @@ This is an example of how to run the experiment on our numerical questions datas
 python recursive_sae.py --prompts-file q_a/number_questions.txt --answers-file q_a/number_answers.txt --output-dir 8b_number_result 
 ```
 
-You can navigate to the ```q_a``` folder and see the filenames for the other 2 categories we test our method on (multiple choice and general knowledge), and change the ```--prompts-file``` parameter accordingly.
+You can navigate to the ```q_a``` folder and see the filenames for the other 2 categories we test our method on (multiple choice and general knowledge), and change the ```--prompts-file``` ```  --answers-file``` and parameters accordingly. The structure of these files is simple: for each line in questions, the corresponding line in answers is the correct token. Keep in mind that the default model we use il Llama 3.1 8b, which can be sensitive to question format.
 
 Once this file is done running (keep in mind you need a lot of VRAM) you will find a log file for each prompt, and you will see a summary.txt file with the average percentages of correct answers and the average Jaccard similarity between starting and fixed point features.
 
